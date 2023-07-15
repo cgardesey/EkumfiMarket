@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_yellow"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/welcomemsg"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                 android:textStyle="bold"
+                    android:text="@string/almostdone"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_gravity="center"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/sms"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/verifymobilenumber"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Enter your mobile number."
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/usernameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/phoneView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edge"
+                android:drawablePadding="8dp"
+                android:hint="@string/contact"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="128dp"
+                android:singleLine="true" />
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="120dp"
+                android:layout_marginLeft="4dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/roundededittext"
+                android:text="@string/previous"
+                android:layout_weight="0.5"
+                android:visibility="gone"
+                android:id="@+id/backbtn"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/roundededittext"
+                android:text="Proceed"
+                android:enabled="false"
+                android:id="@+id/nextpagebtn"
+                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

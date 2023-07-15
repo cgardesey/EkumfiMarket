@@ -1,0 +1,654 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Ekumfi Juice</string>
+    <string name="resetpassword">Réinitialiser le mot de passe</string>
+
+    <string name="title_explore">Explorer</string>
+    <string name="title_app">Univirtuel</string>
+    <string name="signin_message">Connectez-vous pour accéder à des cours et du matériel de qualité</string>
+    <string name="title_settings">Paramètres</string>
+    <string name="title_accout">Compte</string>
+    <string name="title_enrolment">Effectifs inscrits</string>
+    <string name="title_achievements">Réalisations</string>
+
+    <string name="monday">LUNDI</string>
+    <string name="tuesday">MARDI</string>
+    <string name="wednesday">MERCREDI</string>
+    <string name="thursday">JEUDI</string>
+    <string name="friday">VENDREDI</string>
+    <string name="saturday">SAMEDI</string>
+    <string name="sunday">DIMANCHE</string>
+
+    <string name="addreminder">Ajouter un rappel</string>
+
+
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="menu_item_reply">Supprimer</string>
+
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+
+    <string name="country_prompt">Choisis un titre</string>
+
+    <string-array name="title_arrays">
+        <item>Aucune sélection</item>
+        <item>Prof.</item>
+        <item>Dr.</item>
+        <item>M.</item>
+        <item>Mme</item>
+        <item>Mlle</item>
+    </string-array>
+
+    <string-array name="duration_arrays">
+        <item>Day</item>
+        <item>La semaine</item>
+        <item>Mois</item>
+    </string-array>
+
+    <string-array name="marital_arrays">
+        <item>Aucune sélection</item>
+        <item>Célibataire</item>
+        <item>Marié(e)</item>
+        <item>Divorcé(e)</item>
+        <item>Veuf(ve)</item>
+    </string-array>
+    <string-array name="gender_arrays">
+        <item>Aucune sélection</item>
+        <item>Hommes</item>
+        <item>Femme</item>
+    </string-array>
+
+
+    <string-array name="education_arrays">
+        <item>Aucune sélection</item>
+        <item>Basique</item>
+        <item>Secondaire</item>
+        <item>Disciplines Professionnelles/Techniques</item>
+        <item>License</item>
+        <item>Diplômé</item>
+    </string-array>
+
+    <string name="search">Chercher…</string>
+
+
+    <!-- Strings related to attemptSignin -->
+    <string name="email">E-mail</string>
+    <string name="action_sign_in_short">Inscription</string>
+    <string name="error_field_required">Ce champ est obligatoire</string>
+
+
+    <string name="title_timetable">Horaires de Travail</string>
+    <string name="attendance">Présence</string>
+    <string name="profile">Profil</string>
+    <string name="assignment">Tâche</string>
+    <string name="upcoming">À Venir Aujourd\'hui</string>
+    <string name="allmyclasses">Mes Cours</string>
+    <string name="expiredsubscriptions">Abonné de Façon Inactive</string>
+    <string name="activesubscriptions">Abonné Activement</string>
+    <string name="status">Statut</string>
+    <string name="score">Notes</string>
+    <string name="viewassignment">Afficher L\'affectation</string>
+    <string name="submitassignment">Soumettre une Affectation</string>
+    <string name="viewsubmitedassignment">Afficher L\'affectation Soumise</string>
+    <string name="topic">Sujet</string>
+    <string name="coursepath">Cours</string>
+    <string name="website">Site Officiel</string>
+    <string name="display">Écran</string>
+    <string name="webportal">Portail Web</string>
+    <string name="logout">Déconnexion</string>
+    <string name="nightmode">Mode Nuit</string>
+    <string name="off">Désactivé</string>
+    <string name="on">Le</string>
+    <string name="enterclass">Entrer en classe</string>
+    <string name="renewsubscription">S\'abonner</string>
+    <string name="ratecourse">Cours de Taux</string>
+
+    <string name="unenroll">Désinscrire</string>
+
+    <string name="uploadmaterial">Cliquez pour télécharger</string>
+    <string name="uploadmessage">Soumettez votre travail de cours en le téléchargeant en utilisant le bouton ci-dessous</string>
+    <string name="mypayments">Mes Paiements Récents</string>
+
+    <string name="inclass">En classe</string>
+    <string name="playback">Lecture</string>
+    <string name="selectoption">Sélectionnez l\'option de ressource</string>
+    <string name="classchat">Chat en classe</string>
+    <string name="classquiz">Quiz de classe.</string>
+    <string name="pastquestions">Questions passées</string>
+
+    <string name="classconferencecall">Conférence téléphonique en classe</string>
+    <string name="liveclassaudiostream">Flux audio de classe en direct</string>
+    <string name="classdocs">Documents de classe</string>
+    <string name="classsession">Session de classe</string>
+    <string name="recordedclassconferencecall">Conférence téléphonique enregistrée en classe</string>
+    <string name="recordedclassaudiostream">Flux audio de classe enregistré</string>
+    <string name="classdoc">Document de Classe à Venir</string>
+    <string name="recordedclassvideostream">Flux vidéo de classe enregistré</string>
+    <string name="liveclass">Flux de classe enregistré</string>
+    <string name="liveclassvideostream">Flux vidéo de classe en direct</string>
+    <string name="liveclassstream">Flux de cours en direct</string>
+    <string name="classpayback">Flux de classe enregistré</string>
+    <string name="recordedaudio">Audio de classe enregistré</string>
+    <string name="recordedclassvideos">Vidéos de classe enregistrées</string>
+    <string name="downloadableclassvideos">Vidéos de cours téléchargeables</string>
+    <string name="description_delete_button">retour arrière</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_star_number">*</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_pound_number">#</string>
+    <string name="description_voicemail_button">message vocal</string>
+    <string name="description_image_button_plus">plus</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_0_letters">+</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_1_letters"></string>
+    <!--  Do not translate. -->
+    <string name="dialpad_2_letters">ABC</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_3_letters">DEF</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_4_letters">GHI</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_5_letters">jkl</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_6_letters">MNO</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_7_letters">pqrs</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_8_letters">TUV</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_9_letters">WXYZ</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_star_letters"></string>
+    <!--  Do not translate. -->
+    <string name="dialpad_pound_letters"></string>
+    <!-- String describing the back button in the dialpad. -->
+    <string name="description_dialpad_back">Retour</string>
+    <!-- String describing the overflow menu button in the dialpad. -->
+    <string name="description_dialpad_overflow">Autres options</string>
+    <!-- Dialog message which is shown when the user tries to check voicemail
+       while the system isn't ready for the access. [CHAR LIMIT=NONE] -->
+    <string name="read_file">Cette application doit avoir accès à votre stockage de fichiers pour pouvoir lire des fichiers.</string>
+    <string name="openfile">Ouvrir un fichier</string>
+    <string name="askquestion">Posez votre question</string>
+    <string name="speaker">Haut-parleur</string>
+    <string name="leaveclass">Quitter la classe</string>
+    <string name="endplayback">Lecture</string>
+    <string name="mute">Sourdine</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="keypad">Pavé numérique</string>
+    <string name="addcall">Ajouter un appel</string>
+    <string name="active">Actif</string>
+
+    <string name="rationale_doc_picker">Nous avons besoin de cette autorisation pour lire les documents de l\'appareil.</string>
+
+    <string name="title_learn">Mes Cours</string>
+    <string name="messages">Mes Groupes</string>
+    <string name="cancel">Annuler</string>
+    <string name="unmute">Désactiver Muet</string>
+    <string name="sackfromclass">Étudiant</string>
+    <string name="contact">Numéro de téléphone</string>
+    <string name="createcourse">Créer un Cours</string>
+    <string name="duration">Durée :</string>
+    <string name="enterstudentphone">Entrez le numéro de téléphone de l\'élève</string>
+    <string name="go">C’est parti</string>
+    <string name="next">Suivant</string>
+    <string name="almostdone">Presque fini!</string>
+    <string name="verifymobilenumber">Vérifier le numéro de mobile MTN</string>
+    <string name="shortfreecall">Un <b>court</b> appel gratuit sera bientôt placé sur notre système pour vérifier votre numéro</string>
+    <string name="didntplacecall">Vous n\'avez pas reçu d\'appel?</string>
+    <string name="completeverification">Cliquez pour terminer la vérification</string>
+    <string name="changenumber">Numéro de modification</string>
+    <string name="answerhere">Saisissez votre réponse ici…</string>
+    <string name="myquestions">Mes demandes</string>
+    <string name="typequestionhere">Posez votre question ici</string>
+    <string name="possibleanswers">Réponses possibles</string>
+    <string name="questionnumber">de la question</string>
+    <string name="newgroup">Nouveau groupe</string>
+    <string name="back">Précédent</string>
+    <string name="delete">Supprimer</string>
+    <string name="startgroupcall">Créer un groupe</string>
+    <string name="startover">Effacer le groupe et recommencer</string>
+    <string name="defaul_sim_msg"><u>Multi-sim détecté. Cliquez pour définir la carte SIM par défaut avant de cliquer sur Suivant, sinon la vérification échouera</u></string>
+    <string name="live_interactive">Cours interactifs en direct avec des instructeurs chevronnés</string>
+    <string name="available_for_download">Les cours en direct deviennent disponibles pour la réémission et vous pouvez suivre à votre rythme.</string>
+    <string name="free_data">Bundle de données Internet gratuit pour les abonnés pour accéder aux ressources de classe</string>
+    <string name="live">En direct</string>
+    <string name="recorded">Enregistré</string>
+    <string name="internet">Internet</string>
+    <string name="get_started">Commencer</string>
+    <string name="pending_verification">En attente de validation</string>
+    <string name="almost_done">Presque fini !</string>
+    <string name="retry_in">Réessayer dans :</string>
+    <string name="retry">Réessayer</string>
+    <string name="error_contacting_server">Erreur de communication avec le serveurVeuillez réessayer</string>
+    <string name="assignment_date">Date D\'attribution</string>
+    <string name="verification_failed">Échec de la vérification!</string>
+    <string name="number_cannot_be_used">Ce numéro ne peut pas être utilisé car il est lié à un compte enseignant.</string>
+    <string name="unsubmitted">Non soumis</string>
+    <string name="my_groups">Mes Groupes</string>
+    <string name="inviting_to_class">Invitation en classe ...</string>
+    <string name="locking_student">Verrouiller l\'élève ...</string>
+    <string name="unlocking_student">Déverrouillage étudiant ..</string>
+    <string name="success">Super!</string>
+    <string name="kicking_out_student">Expulser l\'élève ...</string>
+    <string name="successfully_kicked_student_out">Élève renvoyé avec succès...</string>
+    <string name="kick_action_failed_for_user">Échec de l\'action de coup de pied pour l\'utilisateur</string>
+    <string name="student_not_in_class">L\'élève n\'est pas en classe ...</string>
+    <string name="muting_student">Étudiant muet</string>
+    <string name="successfully_muted_student">Étudiant en sourdine réussi</string>
+    <string name="unmuting_student">Étudiant non muet ...</string>
+    <string name="successfully_unmuted_student">Étudiant non muet réussi</string>
+    <string name="administrator">ADMINISTRATEUR</string>
+    <string name="renew_subscription">Renouveler L\'abonnement</string>
+    <string name="subscribe">S\'abonner</string>
+    <string name="seconds">secondes</string>
+    <string name="feching_data">Récupération des données</string>
+    <string name="call_timed_out">Appel expiré</string>
+    <string name="placing_call_failed">Échec de l\'appel.La carte SIM par défaut n\'a peut-être pas été définie.</string>
+    <string name="click_to_add_to_group">Cliquez sur l\'un des étudiants ci-dessous pour l\'ajouter au groupe</string>
+    <string name="no_unsubmitted_assignments">Vous n\'avez actuellement aucune affectation non soumise.</string>
+    <string name="no_submitted_assignments">Vous n\'avez actuellement aucun devoir soumis.</string>
+    <string name="unmute_call">Désactiver Muet</string>
+    <string name="call_muted">L\'appel en sourdine</string>
+    <string name="successfully_locked_student">Étudiant verrouillé avec succès</string>
+    <string name="resume_call">Reprendre l\'appel</string>
+    <string name="call_paused">En pause</string>
+    <string name="call_resumed">L\'appel a repris</string>
+    <string name="pause">Pause</string>
+    <string name="description">Description</string>
+    <string name="about_instructor">À propos du professeur</string>
+    <string name="offered_by">De la part de</string>
+    <string name="enrol">S’inscrire</string>
+    <string name="courses">Cours</string>
+    <string name="error_loading_data">Erreur lors du chargement des données.</string>
+    <string name="there_are_currently_no_instructors_for_this_course">Il n\'y a actuellement aucun instructeur pour ce cours.</string>
+    <string name="_1_of_2">1 de 2</string>
+    <string name="personal_information">Renseignements Personnels</string>
+    <string name="title">Poste* :</string>
+    <string name="gender">Sexe* :</string>
+    <string name="answer">Réponse</string>
+    <string name="charge">Charge</string>
+    <string name="payment_description">Description du paiement</string>
+    <string name="response_message">message de réponse</string>
+    <string name="pending_transaction">Transactions en attente</string>
+    <string name="_2_of_2">2 de 2</string>
+    <string name="educational_background">Formation Initiale</string>
+    <string name="highest_educational_level">Niveau D\'éducation le plus élevé* :</string>
+    <string name="there_are_currently_no_recorded_audio">Il n\'y a actuellement aucun audio enregistré</string>
+    <string name="title_1">Nom</string>
+    <string name="submission_date">Date de Soumission</string>
+    <string name="teacher">professeur</string>
+    <string name="attach_file_s">Joindre un/des fichier(s)</string>
+    <string name="taught_by">Enseigné par:</string>
+    <string name="subscription_expires_on">Ton abonnement expirera le</string>
+    <string name="submit">SOUMETTRE</string>
+    <string name="class_quizzes">Quiz de Classe</string>
+    <string name="quiz_list">Liste de Quiz</string>
+    <string name="you_currently_have_no_quizzes_for_this_course">Vous n\'avez actuellement aucun quiz pour ce cours.</string>
+    <string name="you_currently_have_no_submitted_quizzes_for_this_course">Vous n\'avez actuellement soumis aucun quiz pour ce cours.</string>
+    <string name="calling_our_system_to_verify_your_number">Appeler notre système pour vérifier votre numéro ...</string>
+    <string name="call_participants">Appeler les Participants</string>
+    <string name="you_have_no_participant_in_group_call_yet">Vous n\'avez pas encore de participant à l\'appel de groupe Les participants du groupe s\'affichent ici dès qu\'ils se joignent à l\'appel</string>
+    <string name="gallery">Galerie</string>
+    <string name="document">Document</string>
+    <string name="camera">Caméra</string>
+    <string name="enrolments_will_show_here_after_you_enrol_into_course_s">Les inscriptions s\'afficheront ici après votre inscription aux cours.</string>
+    <string name="payments">Paiements</string>
+    <string name="grade">Note :</string>
+    <string name="discussion_groups">Les discussions de groupe</string>
+    <string name="share">Part</string>
+    <string name="end_group_call">end group</string>
+    <string name="there_is_no_document_file_for_this_playback">Il n\'y a pas de fichier de document pour cette lecture.</string>
+    <string name="there_is_no_document_file_for_this_audio_stream">Il n\'y a pas de fichier de document pour ce flux audio.</string>
+    <string name="there_is_no_document_file_for_this_class_session">Il n\'y a pas de fichier de document pour cette session de classe.</string>
+    <string name="active_call">Appel Actif ...</string>
+    <string name="submit_date">Date d’envoi</string>
+    <string name="submitted">Envoyé</string>
+    <string name="optional_review">Révision facultative (200 caractères max.)</string>
+    <string name="type_a_message">En train de rédiger un message...</string>
+    <string name="_233546101177">233546101177</string>
+    <string name="_246104545">246104545</string>
+    <string name="first_name">Prénom*</string>
+    <string name="last_name">Nom de famille*</string>
+    <string name="assignment_title">Titre du devoir*</string>
+    <string name="name_of_institution">Nom de l\'école*</string>
+    <string name="swipe_to_previous_page">Passer à la page précédente</string>
+    <string name="swipe_to_next_page">Passer à la page suivante</string>
+    <string name="other_name_s">Autre Nom(s)</string>
+    <string name="search_here">Recherchez ici</string>
+    <string name="group_name">Nom du groupe</string>
+    <string name="price_per_week">Prix par semaine</string>
+    <string name="logged_in">Connecté</string>
+    <string name="date">Date</string>
+    <string name="submitted_assignment">Affectation Soumise</string>
+    <string name="please_enter_your_mtn_number">S\'il vous plaît entrer votre numéro</string>
+    <string name="you_currently_have_no_unsubmitted_assignments">Vous n\'avez actuellement aucune affectation non soumise.</string>
+    <string name="exit">Quitter ?</string>
+    <string name="previous">Précédent</string>
+    <string name="institution_type">Type D\'établissement</string>
+    <string name="address">Adresse</string>
+    <string name="invite_to_group">Inviter au Groupe</string>
+    <string name="lock_participant">Verrouiller le Participant</string>
+    <string name="unlock_participants">Déverrouillez les Participants</string>
+    <string name="next_class_on">Classe suivante</string>
+    <string name="today_at">Aujourd\'hui à</string>
+    <string name="no_upcoming_course">Vous n\'avez actuellement aucun cours à venir pour aujourd\'hui.</string>
+    <string name="you_currently_have_no_live_classes">Vous n\'avez actuellement aucun cours en direct.</string>
+    <string name="no_active_subscriptions">Vous n\'avez pas d’échéance active.</string>
+    <string name="no_expired_subscriptions">Vous n\'avez actuellement aucun abonnement expiré.</string>
+    <string name="enrolments_will_show_here">Les inscriptions s\'afficheront ici après votre inscription aux cours.</string>
+    <string name="rating">classement</string>
+    <string name="no_ratings_available">Aucune évaluation disponible</string>
+    <string name="successfully_unenrolled">Désinscrit avec succès</string>
+    <string name="please_enter_number">Merci d\'entrer un nombre</string>
+    <string name="invalid_mtn_number">Numéro MTN non valide!</string>
+    <string name="file_size_of">Taille du fichier</string>
+    <string name="larger_than_limit">est supérieur à la limite maximale de 10M</string>
+    <string name="error_choosing_image">Erreur lors du choix de l\'image</string>
+    <string name="calling">Appel</string>
+    <string name="internet_connection_is_needed">Une connexion à Internet est requise.</string>
+    <string name="already_enrolled">Vous êtes déjà inscrit à ce cours!</string>
+    <string name="prompting_instructor">Instructeur invité ...</string>
+    <string name="successfully_enrolled">Inscription réussie.</string>
+    <string name="updating_profile">Mise à jour du profil …</string>
+    <string name="please_wait">Veuillez patienter...</string>
+    <string name="your_enrolment_is_pending_approval">Votre inscription à ce cours est en attente d\'approbation.</string>
+    <string name="enrolment_request_successfully_sent">La demande d\'inscription a bien été envoyée. Vous serez appelé sur le numéro de téléphone mobile avec lequel vous vous êtes inscrit pour terminer votre processus d\'inscription</string>
+    <string name="your_subscription_has_expired">Votre abonnement a expiré</string>
+    <string name="download_failed">Échec de téléchargement.</string>
+    <string name="download_cancelled">Téléchargement annulé</string>
+    <string name="this_permission_is_mandatory_pls_allow_access">Cette autorisation est obligatoire pour l\'application.S\'il vous plait autorisez l\'accès.</string>
+    <string name="pls_correct_the_errors">S\'il vous plaît corrigez les erreurs.</string>
+    <string name="your_score_is">Votre score est</string>
+    <string name="no_live_chat_at_the_moment">Il n\'y a pas de chat en direct pour ce cours pour le moment.</string>
+    <string name="mute_off">Sourdine désactivée</string>
+    <string name="your_instructor_is_yet_to_start_class">Votre instructeur n\'a pas encore commencé le cours.</string>
+    <string name="no_live_class_at_the_moment">Il n\'y a pas de cours en direct pour ce cours pour le moment.</string>
+    <string name="no_live_video_class_at_the_moment">Il n\'y a pas de cours vidéo en direct pour ce cours pour le moment.</string>
+    <string name="no_live_audio_class_at_the_moment">Il n\'y a pas de cours audio en direct pour ce cours pour le moment.</string>
+    <string name="audio_recording_cancelled">L\'enregistrement audio a été annulé.</string>
+    <string name="compresing_audio_file_for_upload">Compression du fichier audio pour le téléchargement...</string>
+    <string name="pls_attach_file">Veuillez joindre un fichier.</string>
+    <string name="cannot_select_more_than">Vous ne pouvez pas sélectionner plus de</string>
+    <string name="item">article</string>
+    <string name="sorry_no_document_found">Désolée !Aucun document trouvé</string>
+    <string name="no_suitable_app_for_viewing_this_file">Vous ne disposez peut-être pas d\'une application appropriée pour afficher ce fichier.</string>
+    <string name="image_not_set">L\'image n\'est pas définie!</string>
+    <string name="file_already_added">Déjà ajouté</string>
+    <string name="assignment_successfully_submitted">Affectation soumise avec succès!</string>
+    <string name="successfully_logged_out">Déconnexion réussie !</string>
+    <string name="page_not_found">Page introuvable.</string>
+    <string name="downloading">Téléchargement...</string>
+    <string name="permissions">Autorisations</string>
+    <string name="error_deleting_file_from_device">Erreur lors de la suppression du fichier de l\'appareil.</string>
+    <string name="minimum_rating_allowed_is_onestar">La note minimale autorisée est d\'une étoile!</string>
+    <string name="successfully_submitted">Soumis avec succès!</string>
+    <string name="no_student_selected">Aucun élève sélectionné</string>
+    <string name="pls_enter_a_group_name">Saisissez un nom de groupe.</string>
+    <string name="invalid_number">Numéro non valide</string>
+    <string name="sorry_document_file_not_exist_on_your_internal_storrage">Désolé, ce fichier de document n\'existe pas sur votre stockage interne</string>
+    <string name="uploading_file">Importation du fichier…</string>
+    <string name="unsupported_file_format">Format fichier non pris en charge!</string>
+    <string name="successfully_updated">Mis à jour avec succès !</string>
+    <string name="connection_error">Erreur de connexion.</string>
+    <string name="timeout_error">Erreur de délai d\'attente</string>
+    <string name="authentication_failure">Echec lors de l\'authentification.</string>
+    <string name="server_error">Application externe vers le bas.</string>
+    <string name="network_error">Erreur réseau.</string>
+    <string name="unenrolling">Désinscription ...</string>
+    <string name="pls_wait">Veuillez patienter...</string>
+    <string name="completing_verification">Fin de la vérification ...</string>
+    <string name="submitting_quiz">Envoi du quiz ...</string>
+    <string name="processing">En cours de traitement ...</string>
+    <string name="enrolment_request">Demande d\'inscription</string>
+    <string name="course_belongs_to_an_institution">Ce cours appartient à une institution.Envoyer une demande à l\'institution pour vous inscrire à ce cours?</string>
+    <string name="enrolling">inscription</string>
+    <string name="requesting_enrolment">Demande d\'inscription ...</string>
+    <string name="downloading_chat_document">Téléchargement du document de discussion ...</string>
+    <string name="joining_class">Rejoindre la classe ...</string>
+    <string name="checking_for_chat_session">Vérification de la session de chat ...</string>
+    <string name="checking_for_live_class">Vérification des cours en direct ...</string>
+    <string name="checking_for_live_class_video_stream">Vérification du flux vidéo de la classe en direct ...</string>
+    <string name="checking_for_live_class_audio_stream">Vérification du flux audio de la classe en direct ...</string>
+    <string name="pending_payment">En attente de paiement</string>
+    <string name="price_change">Changement de prix</string>
+    <string name="dial_170">Veuillez composer *170# sur le numéro de téléphone portable que vous avez entré.\n\nSélectionnez l\'option 6. Mon portefeuille.\n\nSélectionnez l\'option 3. Mes approbations\n\nEntrez le code PIN et approuvez la transaction en attente.\n\nSur l\'application, cliquez sur l\'icône d\'actualisation sur la page des inscriptions et continuez à entrer dans la salle de classe.</string>
+    <string name="checking_for_upcoming_class_document">Vérification du prochain document de classe ...</string>
+    <string name="checking_for_available_room">Vérification de la chambre disponible ...</string>
+    <string name="downloading_class_document">Téléchargement du document de classe ...</string>
+    <string name="per_week">par semaine</string>
+    <string name="per_month">par mois</string>
+    <string name="refresh_payment_tip">Flux audio de classe enregistré</string>
+    <string name="refresh_timetable_tip">Vous pouvez cliquer sur l\'icône d\'actualisation pour refléter les changements d\'horaire</string>
+    <string name="filter_courses_tip">Vous pouvez cliquer sur la zone en surbrillance pour filtrer les cours</string>
+    <string name="unenrol_tip">Vous pouvez cliquer sur la zone en surbrillance pour afficher les informations sur le cours ou pour vous désinscrire d\'un cours</string>
+    <string name="enrol_tip">Vous pouvez cliquer ici pour vous inscrire</string>
+    <string name="institution_info_tip">Cliquez ici pour plus d\'informations sur une institution</string>
+    <string name="search_courses_tip">Recherchez des cours dans la zone en surbrillance</string>
+    <string name="choose_course_tip">Vous pouvez cliquer sur un élément pour vous guider dans le choix d\'un cours</string>
+    <string name="check_for_new_assignment_tip">Vous pouvez cliquer sur la zone en surbrillance pour rechercher de nouvelles affectations</string>
+    <string name="information_about_assignment_tip">Vous pouvez cliquer sur l\'icône du menu déroulant pour vous inscrire</string>
+    <string name="check_for_new_quizzes_tip">Vous pouvez cliquer sur l\'icône d\'actualisation pour rechercher de nouveaux questionnaires</string>
+    <string name="hide_document_tip">Vous pouvez cliquer sur l\'icône de réduction pour masquer le document</string>
+    <string name="click_anywhere_to_dismiss">\n\nCliquez n\'importe où sur votre écran pour ignorer le pourboire</string>
+    <string name="refreshing_enrolment_status">Actualisation du statut des inscriptions...</string>
+    <string name="refreshing_timetable">Calendrier rafraîchissant ...</string>
+    <string name="still_pending_approval">Vous avez précédemment envoyé une demande d\'inscription à ce cours.Votre demande est toujours en attente d\'approbation. \n\nMerci</string>
+    <string name="ok">Ok</string>
+    <string name="refreshing_payment_status">Actualisation du statut des paiements...</string>
+    <string name="checking_for_new_videos">Recherche de nouvelles vidéos...</string>
+    <string name="refreshing">En cours d’actualisation</string>
+    <string name="checking_for_new_assignment">Recherche de nouvelles affectations...</string>
+    <string name="checking_for_new_quizzes">Recherche de nouveaux quiz ...</string>
+    <string name="crop_image">Recadrer l\'image</string>
+    <string name="share_download_url">Partager Télécharger l\'URL!</string>
+    <string name="me">Moi</string>
+    <string name="playback_in_session">Lecture en session</string>
+    <string name="group_call_in_session">Appel de groupe en session</string>
+    <string name="contact_permissions_is_required">L\'autorisation des contacts est requise pour afficher les informations de contact dans la notification d\'appel.</string>
+    <string name="outgoing">Envoi</string>
+    <string name="incoming">Entrant</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="delete_">Supprimer ?</string>
+    <string name="we_need_this_permission_to_display_chat_messages">Nous avons besoin de cette autorisation pour afficher les messages de discussion.</string>
+    <string name="class_in_session">Classe en session</string>
+    <string name="no_internet_connection">Pas de connexion Internet !</string>
+    <string name="use_system_default_calling_app_for_calls">Utiliser l\'application d\'appel par défaut du système pour les appels</string>
+    <string name="use_system_app_for_calls">Utilisez l\'application School Direct Student pour les appels</string>
+    <string name="file_no_longer_available_for_download">Désolé! Ce fichier n\'est plus disponible au téléchargement</string>
+    <string name="topics">Les sujets</string>
+    <string name="mute_call">Appel muet</string>
+    <string name="on_hold">En attente</string>
+    <string name="hold_call">Mettre l\'appel en attente</string>
+    <string name="filter_payment_status">Statut du filtre, nombre, cours</string>
+    <string name="grant_permission_to_use_this_app_as_the_default_calling_app">Pour que cette application fonctionne, veuillez accorder l\'autorisation d\'utiliser cette application comme application d\'appel par défaut lorsque vous êtes invité à</string>
+    <string name="course_description">Description du Cours</string>
+    <string name="you_currently_have_no_payments_made">Vous n\'avez actuellement aucun paiement effectué.</string>
+    <string name="no_file_available">Aucun fichier disponible au téléchargement</string>
+    <string name="no_videos_available">Aucune vidéo disponible</string>
+    <string name="no_data_available">Pas de données disponibles.</string>
+    <string name="preschool">Préscolaire</string>
+    <string name="primary_school">École Primaire</string>
+    <string name="jhs">JHS</string>
+    <string name="shs">SHS</string>
+    <string name="preuniversity">Pré-Universitaire</string>
+    <string name="university">Universitaire</string>
+    <string name="professional">Professionnel</string>
+    <string name="vocational">Professionnel</string>
+    <string name="your_are_already_subscribed">Vous êtes déjà inscrit à ce cours.</string>
+    <string name="not_registered">Non enregistré</string>
+    <string name="number_is_not_registered_for_mobile_money">Le numéro saisi n\'est pas enregistré pour l\'argent mobile</string>
+    <string name="already_have_a_processing_payment">Vous avez déjà un traitement de paiement. \n\nVeuillez attendre au moins</string>
+    <string name="before_trying_again">avant de réessayer.</string>
+    <string name="try_again_later">Vous avez déjà un paiement en cours de traitement. \n\nVeuillez réessayer plus tard</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="already_subscribed">Déjà Abonné</string>
+    <string name="instructor_calling">Appel de l\'instructeur ...</string>
+    <string name="accept_invitation_to_enter_live_class">Accepter l\'invitation à rejoindre le cours en direct?</string>
+    <string name="terms_and_conditions">Termes et Conditions</string>
+    <string name="terms_and_conditions_text"><b> Veuillez lire attentivement ces conditions générales avant d\'utiliser notre service </b> \n
+
+<b> Interprétation et définitions </b> \n
+        <b> Interprétation </b> \n
+Les mots dont la lettre initiale est en majuscule ont des significations définies dans les conditions suivantes.
+
+Les définitions suivantes ont la même signification, qu\'elles apparaissent au singulier ou au pluriel. \n \n
+
+        <b> Définitions </b> \n
+Aux fins des présentes conditions générales: \n \n
+
+        <b> Affilié </b> Désigne une entité qui contrôle, est contrôlée par ou est sous contrôle commun avec une partie, où \"contrôle\" signifie la propriété de 50% ou plus des actions, des participations ou d\'autres titres autorisés à voter élection des administrateurs ou d\'une autre autorité de gestion. \n
+
+La <b> société </b> (dénommée \"la société\", \"nous\", \"nous\" ou \"notre\" dans le présent accord) fait référence aux écoles univirtuelles. \n \n
+
+        <b> Pays </b> fait référence à: Ghana, Nigeria, Zambie et Côte d\'Ivoire \n \n
+
+<b> Appareil </b> désigne tout appareil pouvant accéder au Service tel qu\'un ordinateur, un téléphone portable ou une tablette numérique. \n \n
+
+<b> Service </b> fait référence à l\'application mobile et au site Web. \n \n
+
+<b> Conditions générales </b> (également appelées "Conditions") désignent les présentes Conditions générales qui constituent l\'intégralité de l\'accord entre Vous et la Société concernant l\'utilisation du Service. Cet accord de conditions générales a été créé par l\'équipe juridique des écoles univirtuelles. \n
+\n
+<b> Service de médias sociaux tiers </b> Désigne tous les services ou contenus (y compris les données, informations, produits ou services) fournis par un tiers qui peuvent être affichés, inclus ou mis à disposition par le Service. \n \n
+
+ <b>Le site Web </b> fait référence aux écoles univirtuelles, accessibles depuis https://www.univirtualschools.com/\n
+
+<b> Vous </b> signifie la personne qui accède ou utilise le Service, ou la société ou toute autre entité juridique au nom de laquelle cette personne accède ou utilise le Service, selon le cas. \n \n \n
+
+<b> Accusé de réception </b> \n
+Ce sont les termes et conditions régissant l\'utilisation de ce service et l\'accord qui opère entre vous et la société. Ces conditions générales définissent les droits et obligations de tous les utilisateurs concernant l\'utilisation du service. \n \n
+
+Votre accès et votre utilisation du Service sont conditionnés par Votre acceptation et votre respect des présentes Conditions générales. Ces conditions générales s\'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le service. \n \n
+
+En accédant ou en utilisant le Service, vous acceptez d\'être lié par ces Termes et Conditions. Si vous n\'êtes pas d\'accord avec une partie de ces conditions générales, vous ne pouvez pas accéder au service. \n \n
+Votre accès et votre utilisation du Service sont également conditionnés par Votre acceptation et votre respect de la Politique de confidentialité de la Société. Notre politique de confidentialité décrit nos politiques et procédures concernant la collecte, l\'utilisation et la divulgation de vos informations personnelles lorsque vous utilisez l\'application ou le site Web et vous informe de vos droits en matière de confidentialité et de la manière dont la loi vous protège. Veuillez lire attentivement notre politique de confidentialité avant d\'utiliser notre service. \n \n
+
+<b> Liens vers d\'autres sites Web </b> \n
+Notre service peut contenir des liens vers des sites Web ou des services tiers qui ne sont pas détenus ou contrôlés par la société. \n \n
+
+La Société n\'a aucun contrôle sur, et n\'assume aucune responsabilité pour, le contenu, les politiques de confidentialité ou les pratiques de tout site Web ou service tiers. Vous reconnaissez et acceptez en outre que la Société ne sera pas tenue responsable, directement ou indirectement, de tout dommage ou perte causé ou supposé être causé par ou en relation avec l\'utilisation ou la dépendance à l\'égard de tels contenus, biens ou services disponibles sur ou via ces sites Web ou services. \n \n
+
+Nous vous conseillons vivement de lire les conditions générales et les politiques de confidentialité des sites Web ou services tiers que vous visitez. \n \n
+
+<b> Résiliation </b> \n
+Nous pouvons résilier ou suspendre votre accès immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris sans limitation si vous ne respectez pas ces conditions générales. \n \n
+
+En cas de résiliation, votre droit d\'utiliser le service cessera immédiatement. \n \n
+
+<b> Limitation de responsabilité </b> \n
+Nonobstant tout dommage que vous pourriez subir, l\'entière responsabilité de la Société et de l\'un de ses fournisseurs en vertu de toute disposition des présentes conditions et votre recours exclusif pour tout ce qui précède seront limités au montant réellement payé par vous via le service ou 100 USD. si vous n\'avez rien acheté via le service. \n \n
+
+Dans la mesure maximale autorisée par la loi applicable, en aucun cas la Société ou ses fournisseurs ne seront responsables de tout dommage spécial, fortuit, indirect ou consécutif quel qu\'il soit (y compris, mais sans s\'y limiter, les dommages-intérêts pour manque à gagner, perte de données ou autres informations, pour interruption d\'activité, pour blessure corporelle, perte de vie privée résultant de ou de quelque manière que ce soit liée à l\'utilisation ou à l\'impossibilité d\'utiliser le Service, des logiciels tiers et / ou du matériel tiers utilisé avec le Service, ou autrement en relation avec toute disposition des présentes Conditions), même si la Société ou tout fournisseur a été informé de la possibilité de tels dommages et même si le recours échoue de son objectif essentiel. \n \n
+
+Certains États n\'autorisent pas l\'exclusion des garanties implicites ni la limitation de responsabilité pour les dommages accessoires ou consécutifs, ce qui signifie que certaines des limitations ci-dessus peuvent ne pas s\'appliquer. Dans ces États, la responsabilité de chaque partie sera limitée dans toute la mesure permise par la loi. \n \n
+
+<b> Clause de non-responsabilité \"TEL QUEL\" et \"TEL QUE DISPONIBLE\" </b> \n
+Le Service vous est fourni \"TEL QUEL\" et \"TEL QUE DISPONIBLE\" et avec tous les défauts et défauts sans garantie d\'aucune sorte. Dans toute la mesure permise par la loi applicable, la Société, en son nom propre et au nom de ses Affiliés et de ses concédants de licence et fournisseurs de services respectifs, décline expressément toutes les garanties, qu\'elles soient expresses, implicites, statutaires ou autres, en ce qui concerne les Service, y compris toutes les garanties implicites de qualité marchande, d\'adéquation à un usage particulier, de titre et de non-contrefaçon, ainsi que les garanties qui peuvent découler des opérations, des performances, de l\'utilisation ou des pratiques commerciales. Sans limitation à ce qui précède, la Société ne fournit aucune garantie ni engagement, et ne fait aucune représentation d\'aucune sorte que le Service répondra à Vos exigences, atteindra les résultats souhaités, sera compatible ou fonctionnera avec tout autre logiciel, application, système ou service, fonctionnera sans interruption, respecter les normes de performance ou de fiabilité ou être exempt d\'erreurs ou que toute erreur ou défaut peut ou sera corrigé. \n \n
+
+Sans limiter ce qui précède, ni la Société ni aucun des fournisseurs de la société ne fait aucune représentation ou garantie de quelque nature que ce soit, expresse ou implicite: (i) quant au fonctionnement ou à la disponibilité du Service, ou aux informations, au contenu et les matériaux ou produits qui y sont inclus; (ii) que le Service sera ininterrompu ou sans erreur; (iii) quant à l\'exactitude, la fiabilité ou l\'actualité de toute information ou contenu fourni par le biais du Service; ou (iv) que le Service, ses serveurs, le contenu ou les e-mails envoyés par ou pour le compte de la Société sont exempts de virus, scripts, chevaux de Troie, vers, logiciels malveillants, bombes à retardement ou autres composants nuisibles. \n \n
+
+Certaines juridictions n\'autorisent pas l\'exclusion de certains types de garanties ou de limitations des droits statutaires applicables d\'un consommateur, de sorte que certaines ou toutes les exclusions et limitations ci-dessus peuvent ne pas s\'appliquer à vous. Mais dans un tel cas, les exclusions et limitations énoncées dans cette section doivent être appliquées dans toute la mesure applicable en vertu de la loi applicable. \n \n
+
+<b> Loi applicable </b> \n
+Les lois du pays, à l\'exclusion de ses règles de conflits de lois, régiront les présentes conditions et votre utilisation du service. Votre utilisation de l\'application peut également être soumise à d\'autres lois locales, étatiques, nationales ou internationales. \n \n
+
+<b> Résolution des litiges </b> \n
+Si vous avez des inquiétudes ou des différends concernant le service, vous acceptez d\'essayer d\'abord de résoudre le différend de manière informelle en contactant la société. \n \n
+
+<b> Pour les utilisateurs de l\'Union européenne (UE) </b> \n
+Si vous êtes un consommateur de l\'Union européenne, vous bénéficierez de toutes les dispositions obligatoires de la loi du pays dans lequel vous résidez. \n \n
+
+<b> Conformité juridique aux États-Unis </b> \n
+Vous déclarez et garantissez que (i) vous n\'êtes pas situé dans un pays soumis à l\'embargo du gouvernement des États-Unis, ou qui a été désigné par le gouvernement des États-Unis comme un pays \"soutenant le terrorisme\", et (ii) vous n\'êtes pas figurant sur la liste des parties interdites ou restreintes du gouvernement des États-Unis. \n \n
+
+<b> Divisibilité et renonciation </b> \n \n
+<b> Divisibilité </b> \n
+Si une disposition de ces conditions est jugée inapplicable ou invalide, cette disposition sera modifiée et interprétée pour atteindre les objectifs de cette disposition dans toute la mesure possible en vertu de la loi applicable et les autres dispositions continueront de s\'appliquer. \n \n
+
+<b> Renonciation </b> \n
+Sauf disposition contraire des présentes, le défaut d\'exercer un droit ou d\'exiger l\'exécution d\'une obligation en vertu des présentes Conditions n\'affectera pas la capacité d\'une partie à exercer ce droit ou à exiger une telle exécution à tout moment par la suite, ni ne constituera la renonciation à une violation constituer une renonciation à toute violation ultérieure. \n \n
+
+<b> Interprétation de la traduction </b> \n
+Ces conditions générales peuvent avoir été traduites si nous vous les avons mises à disposition sur notre service. Vous acceptez que le texte anglais original prévaudra en cas de litige. \n \n
+
+<b> Modifications de ces conditions générales </b> \n
+Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces conditions à tout moment. Si une révision est importante, nous ferons des efforts raisonnables pour fournir un préavis d\'au moins 30 jours avant l\'entrée en vigueur de toute nouvelle condition. Ce qui constitue un changement important sera déterminé à notre seule discrétion. \n \n
+
+En continuant à accéder ou à utiliser notre service après que ces révisions sont entrées en vigueur, vous acceptez d\'être lié par les conditions révisées. Si vous n\'acceptez pas les nouvelles conditions, en tout ou en partie, veuillez cesser d\'utiliser le site Web et le service. \n \n
+
+<b> Contactez-nous </b> \n
+Si vous avez des questions sur ces conditions générales, vous pouvez nous contacter: \n \n
+
+Par emailaddress: info@univirtualschools.com \n \n \n</string>
+    <string name="accept">J\'accepte</string>
+    <string name="reject">Rejeter</string>
+    <string name="error_occured">Erreur est survenue!</string>
+    <string name="submit_test">Soumettre le Test</string>
+    <string name="class_stats_at">cours commence @</string>
+    <string name="be_sure_to_download">Assurez-vous de télécharger le document de classe à venir si vous ne l\'avez pas déjà fait.</string>
+    <string name="faqs">Questions fréquemment posées</string>
+    <string name="how_to_approve_payments">Comment approuver le paiement</string>
+    <string name="how_to_enter_live_class">Comment entrer en classe en direct au cas où je manquerais l\'invitation téléphonique de mon instructeur pour entrer en classe</string>
+    <string name="go_to_enrolments_page">Accédez à la page des inscriptions. \n1. Cliquez sur le bouton \'ENTER CLASSROOM\'. \n2. Cliquez sur le bouton \'cours en direct\' pour accéder à la classe en direct</string>
+    <string name="how_to_use_system_default_for_calls">Comment utiliser l\'application d\'appel par défaut du système pour les appels</string>
+    <string name="how_to_use_app_for_calls">Comment utiliser l\'application \'School Direct Student\' pour les appels</string>
+    <string name="button_displays_subscribe">Le bouton sur ma page d\'inscription affiche toujours \'S\'ABONNER\' même après m\'être abonné</string>
+    <string name="how_to_ask_question">Comment poser une question si je n\'entre pas en classe en direct avec l\'application \'School Direct Student\' comme application d\'appel par défaut</string>
+    <string name="where_to_locate_downloaded_class_files">Où trouver les fichiers de cours téléchargés</string>
+    <string name="all_files_and_videos_are_downloaded_to">Tous les documents et vidéos du cours sont téléchargés dans le dossier \'SchoolDirectStudent\' de votre répertoire de stockage interne</string>
+    <string name="while_inside_live_class">Dans un cours en direct, appuyez sur \'9\' pour demander à votre instructeur de poser une question</string>
+    <string name="click_on_settings_icon_to_use_app_for_calls">Cliquez sur l\'icône des paramètres sur la page d\'accueil. Cliquez sur le bouton "Utiliser l\'application School Direct Student pour les appels". \n\nL\'exécution de cette action fermera également l\'application</string>
+    <string name="click_to_use_app_for_calls">Aller à la page d\'accueil. \nCliquez sur le bouton de fermeture arrondi dans le coin en bas</string>
+    <string name="click_and_proceed_to_enter_classroom">Cliquez sur l\'icône d\'actualisation sur la page des inscriptions et passez à la salle de classe.</string>
+    <string name="if_you_did_not_receive_popup">Si vous ne recevez pas de pop-up pour approuver la transaction, procédez comme suit: \n1. composez *170# sur le numéro de mobile MTN que vous avez entré. \n2. Sélectionnez l\'option 6. Mon portefeuille. \n3. Sélectionnez l\'option 3. Mes approbations. \n4. Saisissez le code PIN et approuvez la transaction en attente.</string>
+    <string name="download_class_material_if_one_exists">Le cours commence bientôt. Assurez-vous de télécharger tous les documents de classe non téléchargés. \n\nVeuillez suivre ces étapes pour entrer en classe:\n1. Cliquez sur l\'icône \'Mes inscriptions \'sur la page d\'accueil \n2. Cliquez sur le bouton \'ENTER CLASSROOM \' \n3. Cliquez sur le bouton \'Cours en direct\' pour rejoindre le cours en direct</string>
+    <string name="class_doc_available_for_download">document de classe disponible pour téléchargement</string>
+    <string name="class_call_drops">L\'appel de classe est interrompu avec le message \'Transfert d\'appel conditionnel actif.\'</string>
+    <string name="if_you_use_different_sim_card">Si vous utilisez une carte SIM différente de celle avec laquelle vous vous êtes inscrit, vous serez exclu des cours en direct et enregistrés</string>
+    <string name="class_video_available_for_download">vidéo de classe disponible pour téléchargement</string>
+    <string name="class_assignment_available_for_download">devoir de cours disponible pour téléchargement</string>
+    <string name="class_class_quiz_available">quiz de classe disponible</string>
+    <string name="conference_call_class_upcoming_now">cours de conférence téléphonique à venir maintenant</string>
+    <string name="video_class_upcoming_now">cours de vidéo à venir maintenant</string>
+    <string name="audio_class_upcoming_now">cours audio à venir maintenant</string>
+    <string name="upcoming_class">Upcoming class</string>
+    <string name="download_class_session_document">Télécharger le document de la session de classe</string>
+    <string name="download_class_assignment">Pour afficher les nouvelles affectations: \n\n1.Cliquez sur l\'icône des paramètres sur la page d\'accueil. \n2.Cliquez sur le bouton \'Assignments\'. \n3. Cliquez sur l\'icône d\'actualisation dans le coin supérieur droit</string>
+    <string name="download_class_video">Pour visionner de nouvelles vidéos: \n\n1. Cliquez sur l\'icône d\'inscription sur la page d\'accueil. \ n2. Cliquez sur le bouton \'ENTER CLASSROOM \'. \n3. Cliquez sur les vidéos de classe. \ n4. Cliquez sur l\'icône d\'actualisation dans le coin supérieur droit pour voir les vidéos nouvellement ajoutées</string>
+    <string name="download_marked_class_assignment">Pour afficher les nouvelles affectations marquées: \n\n1 .Cliquez sur l\'icône des inscriptions sur la page d\'accueil. \ n2. Cliquez sur le bouton \'ENTER CLASSROOM\'. \ n3. Cliquez sur les affectations de classe. \ n4. Cliquez sur l\'icône d\'actualisation dans le coin supérieur droit pour voir les affectations nouvellement marquées</string>
+    <string name="download_class_quiz">Pour afficher les nouveaux questionnaires: \n\n1.Cliquez sur \'icône d\'inscription sur la page d\'accueil. \n2.Cliquez sur le bouton \'ENTER CLASSROOM BUTTON\'. \n3. Cliquez sur le bouton \'Quiz de classe\'. \n4. Cliquez sur l\'icône d\'actualisation dans le coin supérieur droit de la page pour voir les nouveaux questionnaires ajoutés</string>
+    <string name="download">Télécharger</string>
+    <string name="class_chat">Chat en classe</string>
+    <string name="class_documents">Documents de classe</string>
+    <string name="class_assignmment">Affectation de classe</string>
+    <string name="class_quiz">Quiz de classe</string>
+    <string name="you_are_already_using_system_default">Vous utilisez déjà l\'application d\'appel par défaut du système pour les appels</string>
+    <string name="you_are_already_using_school_direct_student_app">Vous utilisez déjà l\'application School Direct Student pour les appels</string>
+    <string name="click_on_a_row_to_view_additional_payment_details">Cliquez sur une ligne pour afficher des détails de paiement supplémentaires</string>
+    <string name="msg_from">Message de</string>
+    <string name="instructor">instructeur</string>
+    <string name="customLoadingIcon">&#xe807;</string>
+    <string name="customPlayIcon">&#xe802;</string>
+    <string name="customStopIcon">&#xe803;</string>
+    <string name="stream_audio">Radio Rasil</string>
+    <string name="webportalaccess">Accès au portail Web</string>
+    <string name="webinstruction">1. Aller à <b>http://www.2schooldirect.net/instructors/</b> ou cliquez sur le lien ci-dessus\n\n2:Entrez votre numéro de téléphone dans <b>(233) format </b>dans le champ du nom dutilisateur  \n3.Entrez le code PIN ci-dessus dans le champ du mot de passe \n \n \nMerci</string>
+    <string name="generatingotp">Broche de génération ... Veuillez patienter ...</string>
+    <string name="video_stream">Flux vidéo</string>
+    <string name="audio_stream">Flux audio</string>
+    <string name="register">Register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password must be at least 6 characters long</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="title_retry">Try Again!</string>
+
+    <string name="facebook_app_id">283059643162009</string>
+    <string name="fb_login_protocol_scheme">fb283059643162009</string>
+
+
+
+</resources>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.CONTROL_INCALL_EXPERIENCE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" /> <!-- <uses-permission android:name="com.android.alarm.permission.MANAGE_EXTERNAL_STORAGE" /> -->
+
+    <application
+        android:name="com.ekumfi.juice.other.InitApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/service"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/service"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.ekumfi.juice.activity.SelectRoleActivity"
+            android:label="@string/title_activity_select_role"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name="com.ekumfi.juice.service.GuidChangeListenerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--
+<service
+            android:name="com.agsm.gsm.CallService"
+            android:permission="android.permission.BIND_INCALL_SERVICE">
+            <meta-data
+                android:name="android.telecom.IN_CALL_SERVICE_UI"
+                android:value="true" />
+
+            <intent-filter>
+                <action android:name="android.telecom.InCallService" />
+            </intent-filter>
+        </service>
+        -->
+        <service
+            android:name="com.ekumfi.juice.service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--<service
+            android:name="MyNavigationService"
+            android:foregroundServiceType="location">
+            &lt;!&ndash; Any inner elements would go here. &ndash;&gt;
+        </service>-->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vn.tungdx.mediapicker.activities.MediaPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MediaPickerTheme" />
+        <activity
+            android:name="com.ekumfi.juice.activity.OrderSummaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.SellerHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ConsumerHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.CartListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.StockCartListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.SellerIndexActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/service" />
+        <!--
+    Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <!--
+<meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity
+            android:name="com.ekumfi.juice.activity.SearchProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ProximityProductsActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ProximityAgentProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ProximityProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ConsumerOrdersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.SellerOrdersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.StockOrdersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.RiderProviderAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.ekumfi.juice.activity.ConsumerAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ekumfi.juice.activity.SellerAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ekumfi.juice.activity.MapsActivity" />
+        <activity
+            android:name=".activity.LiveLocationActivity" />
+        <activity
+            android:name="com.ekumfi.juice.activity.PictureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.VideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.ConsumerPaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.SellerPaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.HelpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.RadioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.CartItemsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.StockCartItemsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.OfficailWebsiteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ekumfi.juice.activity.DrivingToDestinationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.ekumfi.juice.activity.MyProductListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.GetAuthActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.GetPhoneChangeAuthActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ekumfi.juice.activity.GetPhoneNumberActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.ekumfi.juice.activity.ChangePhonenumberActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver
+            android:name="com.ekumfi.juice.receiver.NetworkReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ekumfi.juice.receiver.AlarmReceiver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekumfi.juice.activity.SellerOrdersActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_square"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@color/transparent"
+                android:padding="16dp"
+                android:src="@drawable/left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Orders"
+                android:textColor="@color/actual_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@color/transparent"
+                android:padding="16dp"
+                android:src="@drawable/reload" />
+
+        </LinearLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@android:color/white"
+            app:tl_indicator_height="2dp"
+            app:tl_indicator_margin_left="16dp"
+            app:tl_indicator_margin_right="16dp"
+            app:tl_indicator_width_equal_title="false"
+            app:tl_textSelectColor="@android:color/white"
+            app:tl_tab_space_equal="true"
+            android:background="#FFC708" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

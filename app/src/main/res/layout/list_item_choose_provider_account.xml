@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:paddingTop="24dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/dialog_bg_ash"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center|left"
+        android:text="Choose Your Provider Account"
+        android:textAlignment="center"
+        android:textColor="#AA0015"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:itemCount="3"
+        tools:listitem="@layout/recycle_choose_provider_account" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addaccount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_gradient"
+            android:text="Add Account"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

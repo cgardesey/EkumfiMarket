@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+
+        android:background="#f2f4f2">
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="176dp"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imagetype"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:elevation="8dp"
+            android:padding="4dp"
+            android:src="@drawable/phone" />
+
+        <RelativeLayout
+            android:id="@+id/downloadStatusWrapper"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pbar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/download"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:src="@drawable/cloud" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/removelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/quantum_ic_delete_white_24" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remove"
+                android:layout_centerHorizontal="true"
+                android:text="10.2 kb"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="#80000000"
+            emojicon:cardCornerRadius="28dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:src="@drawable/play" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:minWidth="96dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#80000000"
+            emojicon:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/download" />
+
+                <TextView
+                    android:id="@+id/retry_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/actual_white"
+                    android:textSize="16sp"
+                    tools:text="74 KB" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

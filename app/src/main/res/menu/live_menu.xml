@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/conferencecall"
+        android:orderInCategory="11"
+        android:title="Conference Call"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/audio"
+        android:orderInCategory="11"
+        android:title="Audio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/video"
+        android:orderInCategory="11"
+        android:title="Video"
+        app:showAsAction="never" />
+
+</menu>

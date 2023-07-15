@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MapsActivity">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_gradient_square"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profileimg"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="4dp"
+                android:src="@drawable/user_icon_white"
+                app:riv_border_color="@android:color/white"
+                app:riv_border_width="1dip"
+                app:riv_corner_radius="30dip"
+                app:riv_oval="false" />
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nametextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:text="Cyril"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/actual_white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/actual_white"
+                    android:textSize="14sp"
+                    tools:text="Available" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/participantsBtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="12dp"
+                android:src="@drawable/group_foreground"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/upbtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="12dp"
+                android:src="@drawable/uparrow"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/downbtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="12dp"
+                android:src="@drawable/downarrow"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/pickfile"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/transparent"
+                android:padding="16dp"
+                android:src="@drawable/importfile"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+
+
+        <ImageView
+            android:id="@+id/confirm_address_map_custom_marker"
+            android:layout_width="40dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/live_pin" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/stop_sharing"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:text="Stop Sharing"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

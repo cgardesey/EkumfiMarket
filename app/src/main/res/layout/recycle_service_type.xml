@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:id="@+id/removelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/quantum_ic_delete_white_24" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remove"
+                android:layout_centerHorizontal="true"
+                android:text="10.2 kb"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/serviceTypeIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/laundry" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/serviceTypeIcon"
+            android:text="Laundry"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

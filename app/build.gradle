@@ -1,0 +1,162 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    namespace "com.ekumfi.juice"
+    buildFeatures {
+        buildConfig true
+    }
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        "androidManifestFile": "$projectDir/src/main/AndroidManifest.xml".toString()
+                ]
+            }
+            resConfigs "en" // And any other languages you support
+        }
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+        applicationId "com.ekumfi.juice"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 40
+        versionName "2.0.7"
+        multiDexEnabled true
+
+        useLibrary 'org.apache.http.legacy'
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue("string", "PORT_NUMBER", "8082")
+        }
+        release {
+            /* minifyEnabled true
+            shrinkResources true*/
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/DEPENDENCIES'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+    }
+    buildToolsVersion = '29.0.3'
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    aaptOptions {
+
+        noCompress "json"
+    }
+}
+
+dependencies {
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0-rc02'
+    implementation 'androidx.navigation:navigation-ui:2.0.0-rc02'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.github.adrielcafe:AndroidAudioRecorder:0.3.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation "com.github.xinyuez:easypermissions:2.0.1"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.core:core:1.2.0"
+    implementation 'com.github.noelchew:MultiPickerWrapper:0.2.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'javax.xml.bind:jaxb-api:2.2.4'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+//    implementation 'net.rimoto:intlphoneinput:1.0.1'
+    implementation 'com.github.chrisbanes:PhotoView:1.3.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'org.androidannotations:androidannotations-api:4.6.0'
+    annotationProcessor "org.androidannotations:androidannotations:4.6.0"
+    implementation("com.google.guava:guava:28.2-android")
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+//    implementation 'com.github.ParkSangGwon:TedPicker:v1.0.10'
+    implementation 'org.jsoup:jsoup:1.8.3' // required
+//    implementation 'com.leocardz:link-preview:2.0.0@aar'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'joda-time:joda-time:2.10.5'
+    implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.3'
+//    implementation 'com.github.joielechong:countrycodepicker:2.4.1'
+    implementation 'com.github.takusemba:spotlight:1.3.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+    implementation 'androidx.work:work-runtime:2.4.0'
+
+    implementation 'com.google.api-client:google-api-client:1.25.0'
+    implementation 'per.freesky1102.mediapicker:mediapicker:1.0.2'
+    implementation 'com.github.rygelouv:android-audio-sensei:0.1.2'
+    implementation 'org.apache.commons:commons-text:1.3'
+//    implementation 'com.github.utsavstha:adonis-websocket-client-android:1.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.4'
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'com.github.ravindu1024:android-keyboardlistener:1.0.0'
+    implementation 'com.otaliastudios:zoomlayout:1.8.0'
+    implementation 'com.arthenica:mobile-ffmpeg-min:4.4.LTS'
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation (
+            group: 'com.aspose',
+            name: 'aspose-words',
+            version: '23.3',
+            classifier: 'android.via.java')
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+    implementation 'net.rimoto:intlphoneinput:1.0.1'
+    implementation 'com.github.drawers:SpinnerDatePicker:1.0.5'
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.maps.android:android-maps-utils:0.4+'
+    implementation 'androidx.fragment:fragment:1.3.0-alpha04'
+    implementation 'androidx.activity:activity:1.3.0-alpha04'
+    implementation 'it.sephiroth.android.library:number-sliding-picker:1.1.1'
+    implementation 'com.github.jama5262:CarouselView:1.2.2'
+    implementation 'com.github.travijuu:numberpicker:1.0.7'
+    implementation 'com.github.BeppiMenozzi:TriStateToggleButton:1.1.4'
+    implementation 'com.github.AfriwanAhda:AudioStreaming:v1.0.0'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'com.github.jd-alexander:library:1.1.0'
+    implementation 'com.uber.sdk:rides-android:0.10.3'
+    implementation platform('com.google.firebase:firebase-bom:29.2.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'io.realm:realm-gradle-plugin:10.0.1'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+}
+apply plugin: 'com.google.gms.google-services'

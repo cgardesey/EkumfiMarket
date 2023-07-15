@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekumfi.juice.activity.PastQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_square"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@color/transparent"
+                android:padding="16dp"
+                android:src="@drawable/left" />
+
+            <TextView
+                android:id="@+id/quiztitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="0.5"
+                android:ellipsize="start"
+                android:maxLines="1"
+                android:textStyle="bold"
+                tools:text="@string/myquestions"
+                android:textColor="@color/actual_white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/submitquestionlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/roundededittext_submit_quiz"
+                android:gravity="center"
+                android:text="@string/submit_test" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            shimmer:duration="800">
+
+            <!-- Adding 3 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+
+                <include layout="@layout/courses_select_shimmer" />
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/error_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/puzzled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="Error loading data!!" />
+
+            <Button
+                android:id="@+id/retrybtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:background="@drawable/bg_gradient"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Retry" />
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noquestionstext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="There are no questions available for this quiz."
+        android:visibility="gone" />
+
+</RelativeLayout>

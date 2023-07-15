@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<attr name="itemLayout" dateTimeFormat="reference" />-->
+    <attr name="colorChoices" format="reference" />
+    <attr name="numColumns" format="integer" />
+    <attr name="showDialog" format="boolean" />
+    <attr name="colorShape" format="enum">
+        <enum name="circle" value="1" />
+        <enum name="square" value="2" />
+    </attr>
+    <attr name="viewSize" format="enum">
+        <enum name="normal" value="1" />
+        <enum name="large" value="2" />
+    </attr>
+
+    <declare-styleable name="ContactsDataKind">
+        <!-- Mime-type handled by this mapping. -->
+        <attr name="android:mimeType" />
+        <!-- Icon used to represent data of this kind. -->
+        <attr name="android:icon" />
+        <!-- Column in data table that summarizes this data. -->
+        <attr name="android:summaryColumn" />
+        <!-- Column in data table that contains details for this data. -->
+        <attr name="android:detailColumn" />
+        <!-- Flag indicating that detail should be built from SocialProvider. -->
+        <attr name="android:detailSocialSummary" />
+        <!-- Resource representing the term "All Contacts" (e.g. "All Friends" or
+        "All connections"). Optional (Default is "All Contacts"). -->
+        <attr name="android:allContactsName" />
+    </declare-styleable>
+
+    <declare-styleable name="ContactListItemView">
+        <attr name="list_item_height" format="dimension" />
+        <attr name="list_section_header_height" format="dimension" />
+        <attr name="activated_background" format="reference" />
+        <attr name="section_header_background" format="reference" />
+        <attr name="list_item_padding_top" format="dimension" />
+        <attr name="list_item_padding_right" format="dimension" />
+        <attr name="list_item_padding_bottom" format="dimension" />
+        <attr name="list_item_padding_left" format="dimension" />
+        <attr name="list_item_gap_between_image_and_text" format="dimension" />
+        <attr name="list_item_gap_between_label_and_data" format="dimension" />
+        <attr name="list_item_presence_icon_margin" format="dimension" />
+        <attr name="list_item_presence_icon_size" format="dimension" />
+        <attr name="list_item_photo_size" format="dimension" />
+        <attr name="list_item_profile_photo_size" format="dimension" />
+        <attr name="list_item_prefix_highlight_color" format="color" />
+        <attr name="list_item_background_color" format="color" />
+        <attr name="list_item_header_text_indent" format="dimension" />
+        <attr name="list_item_header_text_color" format="color" />
+        <attr name="list_item_header_text_size" format="dimension" />
+        <attr name="list_item_header_height" format="dimension" />
+        <attr name="list_item_name_text_color" format="color" />
+        <attr name="list_item_name_text_size" format="dimension" />
+        <attr name="list_item_text_indent" format="dimension" />
+        <attr name="list_item_text_offset_top" format="dimension" />
+        <attr name="list_item_data_width_weight" format="integer" />
+        <attr name="list_item_label_width_weight" format="integer" />
+        <attr name="list_item_video_call_icon_size" format="dimension" />
+        <attr name="list_item_video_call_icon_margin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ContactBrowser">
+        <attr name="contact_browser_list_padding_left" format="dimension" />
+        <attr name="contact_browser_list_padding_right" format="dimension" />
+        <attr name="contact_browser_background" format="reference" />
+    </declare-styleable>
+
+    <attr name="dialpad_style" format="reference" />
+
+    <declare-styleable name="ProportionalLayout">
+        <attr name="direction" format="string" />
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="Favorites">
+        <attr name="favorites_padding_bottom" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Dialpad">
+        <attr name="dialpad_key_button_touch_tint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ResizingText">
+        <attr name="resizing_text_min_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme.Dialpad">
+        <attr name="dialpad_text_color" format="color" />
+        <attr name="dialpad_text_color_primary" format="color" />
+        <attr name="dialpad_text_color_secondary" format="color" />
+        <attr name="dialpad_icon_tint" format="color" />
+        <attr name="dialpad_voicemail_tint" format="color" />
+        <attr name="dialpad_background" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CallLog">
+        <attr name="call_log_primary_text_color" format="color" />
+        <attr name="call_log_primary_background_color" format="color" />
+        <attr name="call_log_secondary_text_color" format="color" />
+        <attr name="call_log_secondary_background_color" format="color" />
+        <attr name="call_log_header_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="VoicemailStatus">
+        <attr name="call_log_voicemail_status_height" format="dimension" />
+        <attr name="call_log_voicemail_status_background_color" format="color" />
+        <attr name="call_log_voicemail_status_text_color" format="color" />
+        <attr name="call_log_voicemail_status_action_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchEditTextLayout" />
+
+    <declare-styleable name="ColorPreference">
+        <attr name="colorChoices" />
+        <attr name="numColumns" />
+        <attr name="colorShape" />
+        <attr name="viewSize" />
+        <attr name="showDialog" />
+
+    </declare-styleable>
+
+    <!--<attr name="itemLayout" format="reference" />-->
+
+    <declare-styleable name="image_labeled_button">
+        <attr name="icon_resource" format="reference" />
+        <attr name="icon_label" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="toggle_image_labeled_button">
+        <attr name="icon_resource_off" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="accordion">
+        <attr name="header_layout_id" format="reference" />
+        <attr name="header_layout_fold_button_id" format="reference" />
+        <attr name="header_layout_label_id" format="reference" />
+        <attr name="custom_font" format="string" />
+        <attr name="section_headers" format="reference" />
+        <attr name="section_container" format="reference" />
+        <attr name="section_container_parent" format="reference" />
+        <attr name="section_bottom" format="reference" />
+        <attr name="section_visibility" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ArrowImageView">
+        <attr name="expanded" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RadioRealButton">
+
+        <attr name="android:enabled" />
+        <attr name="android:clickable" />
+        <attr name="android:background" />
+
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingBottom" />
+
+        <attr name="rrb_drawable" format="reference" />
+        <attr name="rrb_drawablePadding" format="dimension" />
+        <attr name="rrb_drawableTint" format="color" />
+        <attr name="rrb_drawableTintTo" format="color" />
+        <attr name="rrb_drawableWidth" format="dimension" />
+        <attr name="rrb_drawableHeight" format="dimension" />
+        <attr name="rrb_drawableGravity" format="integer">
+            <flag name="left" value="0" />
+            <flag name="top" value="1" />
+            <flag name="right" value="2" />
+            <flag name="bottom" value="3" />
+        </attr>
+
+        <attr name="rrb_text" format="string" />
+        <attr name="rrb_textColor" format="color" />
+        <attr name="rrb_textColorTo" format="color" />
+        <attr name="rrb_textSize" format="dimension" />
+        <attr name="rrb_textTypeface" format="integer">
+            <flag name="monospace" value="0" />
+            <flag name="normal" value="1" />
+            <flag name="sans" value="2" />
+            <flag name="serif" value="3" />
+        </attr>
+        <attr name="rrb_textTypefacePath" format="string" />
+        <attr name="rrb_textFillSpace" format="boolean" />
+        <attr name="rrb_textStyle" format="integer">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="rrb_textGravity" format="integer">
+            <flag name="left" value="0" />
+            <flag name="center" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+
+        <attr name="rrb_checked" format="boolean" />
+        <attr name="rrb_backgroundColor" format="color" />
+        <attr name="rrb_ripple" format="boolean" />
+        <attr name="rrb_rippleColor" format="color" />
+
+
+        <attr name="rrb_selectorColor" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RadioRealButtonGroup">
+
+        <attr name="android:enabled" />
+        <attr name="android:clickable" />
+
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <attr name="android:layout_margin" />
+        <attr name="android:layout_marginLeft" />
+        <attr name="android:layout_marginTop" />
+        <attr name="android:layout_marginRight" />
+        <attr name="android:layout_marginBottom" />
+
+        <attr name="rrbg_buttonsPadding" format="dimension" />
+        <attr name="rrbg_buttonsPaddingLeft" format="dimension" />
+        <attr name="rrbg_buttonsPaddingRight" format="dimension" />
+        <attr name="rrbg_buttonsPaddingTop" format="dimension" />
+        <attr name="rrbg_buttonsPaddingBottom" format="dimension" />
+
+        <attr name="rrbg_radius" format="dimension" />
+        <attr name="rrbg_backgroundColor" format="color" />
+        <attr name="rrbg_enableDeselection" format="boolean" />
+
+        <attr name="rrbg_borderSize" format="dimension" />
+        <attr name="rrbg_borderColor" format="color" />
+
+        <attr name="rrbg_dividerSize" format="dimension" />
+        <attr name="rrbg_dividerPadding" format="dimension" />
+        <attr name="rrbg_dividerColor" format="color" />
+        <attr name="rrbg_dividerRadius" format="dimension" />
+
+        <attr name="rrbg_selectorDividerSize" format="dimension" />
+        <attr name="rrbg_selectorDividerPadding" format="dimension" />
+        <attr name="rrbg_selectorDividerColor" format="color" />
+        <attr name="rrbg_selectorDividerRadius" format="dimension" />
+        <attr name="rrbg_selectorFullSize" format="boolean" />
+
+        <attr name="rrbg_bottomLineColor" format="color" />
+        <attr name="rrbg_bottomLineSize" format="dimension" />
+        <attr name="rrbg_bottomLineBringToFront" format="boolean" />
+        <attr name="rrbg_bottomLineRadius" format="dimension" />
+
+        <attr name="rrbg_selectorTop" format="boolean" />
+        <attr name="rrbg_selectorBottom" format="boolean" />
+        <attr name="rrbg_selectorColor" format="color" />
+        <attr name="rrbg_selectorSize" format="dimension" />
+        <attr name="rrbg_selectorBringToFront" format="boolean" />
+        <attr name="rrbg_selectorAboveOfBottomLine" format="boolean" />
+        <attr name="rrbg_selectorRadius" format="dimension" />
+
+        <attr name="rrbg_checkedPosition" format="integer" />
+        <attr name="rrbg_checkedButton" format="reference" />
+
+        <attr name="rrbg_selectorAnimationType">
+            <flag name="translate_x" value="0" />
+            <flag name="translate_y" value="1" />
+            <flag name="scale_x" value="2" />
+            <flag name="scale_y" value="3" />
+            <flag name="alpha" value="4" />
+        </attr>
+
+        <attr name="rrbg_animate" format="boolean" />
+
+
+        <attr name="rrbg_animateDrawables_tintColor_duration" format="integer" />
+        <attr name="rrbg_animateDrawables_tintColorFrom_duration" format="integer" />
+        <attr name="rrbg_animateDrawables_tintColorTo_duration" format="integer" />
+        <attr name="rrbg_animateDrawables_tintColorFrom" format="color" />
+        <attr name="rrbg_animateDrawables_tintColorTo" format="color" />
+
+        <attr name="rrbg_animateTexts_textColor_duration" format="integer" />
+        <attr name="rrbg_animateTexts_textColorFrom_duration" format="integer" />
+        <attr name="rrbg_animateTexts_textColorTo_duration" format="integer" />
+        <attr name="rrbg_animateTexts_textColorFrom" format="color" />
+        <attr name="rrbg_animateTexts_textColorTo" format="color" />
+
+
+        <attr name="rrbg_animateSelector_delay" format="integer" />
+        <attr name="rrbg_animateSelector_duration" format="integer" />
+        <attr name="rrbg_animateSelector" format="integer">
+            <flag name="fastOutSlowIn" value="0" />
+            <flag name="bounce" value="1" />
+            <flag name="linear" value="2" />
+            <flag name="decelerate" value="3" />
+            <flag name="cycle" value="4" />
+            <flag name="anticipate" value="5" />
+            <flag name="accelerateDecelerate" value="6" />
+            <flag name="accelerate" value="7" />
+            <flag name="anticipateOvershoot" value="8" />
+            <flag name="fastOutLinearIn" value="9" />
+            <flag name="linearOutSlowIn" value="10" />
+            <flag name="overshoot" value="11" />
+        </attr>
+
+
+        <attr name="rrbg_animateDrawables_duration" format="integer" />
+
+        <attr name="rrbg_animateDrawables_scale" format="float" />
+        <attr name="rrbg_animateDrawables_enterDuration" format="integer" />
+        <attr name="rrbg_animateDrawables_enter" format="integer">
+            <flag name="fastOutSlowIn" value="0" />
+            <flag name="bounce" value="1" />
+            <flag name="linear" value="2" />
+            <flag name="decelerate" value="3" />
+            <flag name="cycle" value="4" />
+            <flag name="anticipate" value="5" />
+            <flag name="accelerateDecelerate" value="6" />
+            <flag name="accelerate" value="7" />
+            <flag name="anticipateOvershoot" value="8" />
+            <flag name="fastOutLinearIn" value="9" />
+            <flag name="linearOutSlowIn" value="10" />
+            <flag name="overshoot" value="11" />
+        </attr>
+        <attr name="rrbg_animateDrawables_exitDuration" format="integer" />
+        <attr name="rrbg_animateDrawables_exit" format="integer">
+            <flag name="fastOutSlowIn" value="0" />
+            <flag name="bounce" value="1" />
+            <flag name="linear" value="2" />
+            <flag name="decelerate" value="3" />
+            <flag name="cycle" value="4" />
+            <flag name="anticipate" value="5" />
+            <flag name="accelerateDecelerate" value="6" />
+            <flag name="accelerate" value="7" />
+            <flag name="anticipateOvershoot" value="8" />
+            <flag name="fastOutLinearIn" value="9" />
+            <flag name="linearOutSlowIn" value="10" />
+            <flag name="overshoot" value="11" />
+        </attr>
+
+
+        <attr name="rrbg_animateTexts_duration" format="integer" />
+
+        <attr name="rrbg_animateTexts_scale" format="float" />
+        <attr name="rrbg_animateTexts_enterDuration" format="integer" />
+        <attr name="rrbg_animateTexts_enter" format="integer">
+            <flag name="fastOutSlowIn" value="0" />
+            <flag name="bounce" value="1" />
+            <flag name="linear" value="2" />
+            <flag name="decelerate" value="3" />
+            <flag name="cycle" value="4" />
+            <flag name="anticipate" value="5" />
+            <flag name="accelerateDecelerate" value="6" />
+            <flag name="accelerate" value="7" />
+            <flag name="anticipateOvershoot" value="8" />
+            <flag name="fastOutLinearIn" value="9" />
+            <flag name="linearOutSlowIn" value="10" />
+            <flag name="overshoot" value="11" />
+        </attr>
+        <attr name="rrbg_animateTexts_exitDuration" format="integer" />
+        <attr name="rrbg_animateTexts_exit" format="integer">
+            <flag name="fastOutSlowIn" value="0" />
+            <flag name="bounce" value="1" />
+            <flag name="linear" value="2" />
+            <flag name="decelerate" value="3" />
+            <flag name="cycle" value="4" />
+            <flag name="anticipate" value="5" />
+            <flag name="accelerateDecelerate" value="6" />
+            <flag name="accelerate" value="7" />
+            <flag name="anticipateOvershoot" value="8" />
+            <flag name="fastOutLinearIn" value="9" />
+            <flag name="linearOutSlowIn" value="10" />
+            <flag name="overshoot" value="11" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+
+
+
+    <declare-styleable name="DrawView">
+        <attr name="dv_draw_color" format="color"/>
+        <attr name="dv_draw_tool" format="enum">
+            <enum name="pen" value="0"/>
+            <enum name="line" value="1"/>
+            <enum name="rectangle" value="2"/>
+            <enum name="circle" value="3"/>
+        </attr>
+        <attr name="dv_draw_mode" format="enum">
+            <enum name="draw" value="0"/>
+            <enum name="text" value="1"/>
+            <enum name="eraser" value="2"/>
+        </attr>
+        <attr name="dv_draw_width" format="integer"/>
+        <attr name="dv_draw_alpha" format="integer"/>
+        <attr name="dv_draw_anti_alias" format="boolean"/>
+        <attr name="dv_draw_dither" format="boolean"/>
+        <attr name="dv_draw_style" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="fill_stroke" value="1"/>
+            <enum name="stroke" value="2"/>
+        </attr>
+        <attr name="dv_draw_corners" format="enum">
+            <enum name="butt" value="0"/>
+            <enum name="round" value="1"/>
+            <enum name="square" value="2"/>
+        </attr>
+        <attr name="dv_draw_font_family" format="enum">
+            <enum name="default_font" value="0"/>
+            <enum name="monospace" value="1"/>
+            <enum name="sans_serif" value="2"/>
+            <enum name="serif" value="3"/>
+        </attr>
+        <attr name="dv_draw_font_size" format="integer"/>
+        <attr name="dv_draw_enable_zoom" format="boolean"/>
+        <attr name="dv_draw_max_zoom_factor" format="float"/>
+        <attr name="dv_draw_zoomregion_scale" format="float"/>
+        <attr name="dv_draw_zoomregion_minscale" format="float"/>
+        <attr name="dv_draw_zoomregion_maxscale" format="float"/>
+        <attr name="dv_draw_orientation" format="enum">
+            <enum name="portrait" value="0"/>
+            <enum name="landscape" value="1"/>
+        </attr>
+        <attr name="dv_draw_is_camera" format="boolean"/>
+    </declare-styleable>
+    <!--<attr name="itemLayout" format="reference" />-->
+    <declare-styleable name="BubbleTabBar">
+        <attr name="bubbletab_menuResource" format="reference"/>
+        <attr name="bubbletab_disabled_icon_color" format="color" />
+        <attr name="bubbletab_custom_font" format="reference" />
+        <attr name="bubbletab_horizontal_padding" format="dimension" />
+        <attr name="bubbletab_icon_padding" format="dimension" />
+        <attr name="bubbletab_vertical_padding" format="dimension" />
+        <attr name="bubbletab_icon_size" format="dimension" />
+        <attr name="bubbletab_title_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Bubble">
+        <attr name="android:id"/>
+        <attr name="android:title"/>
+        <attr name="android:icon"/>
+        <attr name="android:enabled"/>
+        <attr name="android:checked"/>
+        <attr name="android:iconTint" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ScrollBar">
+        <attr name="sb_handlerColor" format="color|reference" />
+        <attr name="sb_indicatorColor" format="color|reference" />
+        <attr name="sb_indicatorTextColor" format="color|reference" />
+        <attr name="sb_horizontal" format="boolean|reference" />
+    </declare-styleable>
+    <declare-styleable name="CameraView">
+
+        <attr name="cameraPictureSizeMinWidth" format="integer|reference"/>
+
+        <attr name="android:adjustViewBounds"/>
+        <!-- Direction the camera faces relative to device screen. -->
+        <attr name="facing" format="enum">
+            <!-- The camera device faces the opposite direction as the device's screen. -->
+            <enum name="back" value="0"/>
+            <!-- The camera device faces the same direction as the device's screen. -->
+            <enum name="front" value="1"/>
+        </attr>
+        <!-- Aspect ratio of camera preview and pictures. -->
+        <attr name="aspectRatio" format="string"/>
+        <!-- Continuous auto focus mode. -->
+        <attr name="autoFocus" format="boolean"/>
+        <!-- The flash mode. -->
+        <attr name="flash" format="enum">
+            <!-- Flash will not be fired. -->
+            <enum name="off" value="0"/>
+            <!--
+              Flash will always be fired during snapshot.
+              The flash may also be fired during preview or auto-focus depending on the driver.
+            -->
+            <enum name="on" value="1"/>
+            <!--
+              Constant emission of light during preview, auto-focus and snapshot.
+              This can also be used for video recording.
+            -->
+            <enum name="torch" value="2"/>
+            <!--
+              Flash will be fired automatically when required.
+              The flash may be fired during preview, auto-focus, or snapshot depending on the
+              driver.
+            -->
+            <enum name="auto" value="3"/>
+            <!--
+              Flash will be fired in red-eye reduction mode.
+            -->
+            <enum name="redEye" value="4"/>
+        </attr>
+        <attr name="cameraPictureSizeMaxWidth" format="integer|reference"/>
+
+        <attr name="cameraPictureSizeMinHeight" format="integer|reference"/>
+
+        <attr name="cameraPictureSizeMaxHeight" format="integer|reference"/>
+
+        <attr name="cameraPictureSizeMinArea" format="integer|reference" />
+
+        <attr name="cameraPictureSizeMaxArea" format="integer|reference" />
+
+        <attr name="cameraPictureSizeSmallest" format="boolean"/>
+
+        <attr name="cameraPictureSizeBiggest" format="boolean"/>
+
+        <attr name="cameraPictureSizeAspectRatio" format="string|reference"/>
+
+        <attr name="cameraGestureTap" format="enum">
+            <enum name="none" value="0" />
+            <enum name="focus" value="1" />
+            <enum name="focusWithMarker" value="2" />
+            <enum name="capture" value="3" />
+        </attr>
+
+        <attr name="cameraGestureLongTap" format="enum">
+            <enum name="none" value="0" />
+            <enum name="focus" value="1" />
+            <enum name="focusWithMarker" value="2" />
+            <enum name="capture" value="3" />
+        </attr>
+
+        <attr name="cameraGesturePinch" format="enum">
+            <enum name="none" value="0" />
+            <enum name="zoom" value="4" />
+            <enum name="exposureCorrection" value="5" />
+        </attr>
+
+        <attr name="cameraGestureScrollHorizontal" format="enum">
+            <enum name="none" value="0" />
+            <enum name="zoom" value="4" />
+            <enum name="exposureCorrection" value="5" />
+        </attr>
+
+        <attr name="cameraGestureScrollVertical" format="enum">
+            <enum name="none" value="0" />
+            <enum name="zoom" value="4" />
+            <enum name="exposureCorrection" value="5" />
+        </attr>
+
+        <attr name="cameraFacing" format="enum">
+            <enum name="back" value="0" />
+            <enum name="front" value="1" />
+        </attr>
+
+        <attr name="cameraHdr" format="enum">
+            <enum name="off" value="0" />
+            <enum name="on" value="1" />
+        </attr>
+
+        <attr name="cameraFlash" format="enum">
+            <enum name="off" value="0" />
+            <enum name="on" value="1" />
+            <enum name="auto" value="2" />
+            <enum name="torch" value="3" />
+        </attr>
+
+        <attr name="cameraWhiteBalance" format="enum">
+            <enum name="auto" value="0" />
+            <enum name="incandescent" value="1" />
+            <enum name="fluorescent" value="2" />
+            <enum name="daylight" value="3" />
+            <enum name="cloudy" value="4" />
+        </attr>
+
+        <attr name="cameraGrid" format="enum">
+            <enum name="off" value="0" />
+            <enum name="draw3x3" value="1" />
+            <enum name="draw4x4" value="2" />
+            <enum name="drawPhi" value="3" />
+        </attr>
+
+        <attr name="cameraSessionType" format="enum">
+            <enum name="picture" value="0" />
+            <enum name="video" value="1" />
+        </attr>
+
+        <attr name="cameraJpegQuality" format="integer" />
+
+        <attr name="cameraVideoQuality" format="enum">
+            <enum name="lowest" value="0" />
+            <enum name="highest" value="1" />
+            <enum name="maxQvga" value="2" />
+            <enum name="max480p" value="3" />
+            <enum name="max720p" value="4" />
+            <enum name="max1080p" value="5" />
+            <enum name="max2160p" value="6" />
+        </attr>
+
+        <attr name="cameraCropOutput" format="boolean" />
+
+        <attr name="cameraAudio" format="enum">
+            <enum name="off" value="0" />
+            <enum name="on" value="1" />
+        </attr>
+
+        <attr name="cameraPlaySounds" format="boolean" />
+
+        <attr name="cameraVideoMaxSize" format="float" />
+
+        <attr name="cameraVideoMaxDuration" format="integer" />
+
+        <attr name="cameraVideoCodec" format="enum">
+            <enum name="deviceDefault" value="0" />
+            <enum name="h263" value="1" />
+            <enum name="h264" value="2" />
+        </attr>
+
+        <!-- deprecated attr name="cameraZoomMode" format="enum">
+            <enum name="off" value="0" />
+            <enum name="pinch" value="1" />
+        </attr -->
+
+        <!-- deprecated attr name="cameraCaptureMethod" format="enum">
+            <enum name="standard" value="0" />
+            <enum name="frame" value="1" />
+        </attr -->
+
+        <!-- deprecated attr name="cameraPermissionPolicy" format="enum">
+            <enum name="video" value="0" />
+            <enum name="picture" value="1" />
+        </attr -->
+
+        <!-- deprecated attr name="cameraFocus" format="enum">
+            <enum name="fixed" value="0" />
+            <enum name="continuous" value="1" />
+            <enum name="tap" value="2" />
+            <enum name="tapWithMarker" value="3" />
+        </attr -->
+    </declare-styleable>
+
+
+    <declare-styleable name="AndExoPlayerView">
+        <attr name="andexo_resize_mode" />
+        <attr name="andexo_aspect_ratio" />
+        <attr name="andexo_loop" />
+        <attr name="andexo_full_screen" format="boolean" />
+        <attr name="andexo_play_when_ready" format="boolean" />
+        <attr name="andexo_show_controller" format="boolean" />
+    </declare-styleable>
+
+    <attr name="andexo_resize_mode" format="enum">
+        <enum name="Fit" value="1" />
+        <enum name="Fill" value="2" />
+        <enum name="Zoom" value="3" />
+    </attr>
+
+    <attr name="andexo_aspect_ratio" format="enum">
+        <enum name="aspect_1_1" value="1" />
+        <enum name="aspect_16_9" value="2" />
+        <enum name="aspect_4_3" value="3" />
+        <enum name="aspect_match" value="4" />
+        <enum name="aspect_mp3" value="5" />
+    </attr>
+
+    <attr name="andexo_loop" format="enum">
+        <enum name="infinite" value="1" />
+        <enum name="finite" value="2" />
+    </attr>
+
+</resources>

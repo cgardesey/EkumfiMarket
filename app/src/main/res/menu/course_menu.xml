@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/upcoming"
+        android:orderInCategory="11"
+        android:title="@string/upcoming"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/allmyclasses"
+        android:orderInCategory="11"
+        android:title="@string/allmyclasses"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/expiredsubscription"
+        android:orderInCategory="11"
+        android:title="@string/expiredsubscriptions"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/activesubscriptions"
+        android:orderInCategory="11"
+        android:title="@string/activesubscriptions"
+        app:showAsAction="never" />
+
+</menu>

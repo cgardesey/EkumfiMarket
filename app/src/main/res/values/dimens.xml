@@ -1,0 +1,342 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Icon Sizes -->
+
+    <!-- Text Sizes - We are using DP here rather than SP because these are already large
+         font sizes, and going larger will cause lots of view problems.  This is only for
+         the large forecast numbers in the forecast list -->
+
+    <!-- We will eventually use this to allow us to add additional padding for different screen
+         sizes-->
+    <dimen name="fab_margin_right">16dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+
+    <dimen name="parallax_image_height">280dp</dimen>
+
+
+    <!-- Width of the floating action button -->
+    <!-- Corner radius of the floating action button -->
+    <!-- Z translation of the floating action button -->
+    <!-- Padding to be applied to the bottom of lists to make space for the floating action
+         button -->
+
+    <!--
+          Drag to remove view (in dp because it is used in conjunction with a statically
+          sized icon
+    -->
+
+    <!-- Call Log -->
+
+    <!-- Size of contact photos in the call log and call details. -->
+
+    <!-- Size of call provider icon width and height -->
+
+    <!-- Match call_button_height to Phone's dimens/in_call_end_button_height -->
+
+    <!-- Dimensions for speed dial tiles -->
+
+    <!-- Padding from the last contact tile will provide the end padding. -->
+
+    <!-- Size of the star icon on the favorites tile. -->
+
+    <!-- Padding for the tooltip -->
+
+    <!-- Height of the actionBar - this is 8dps bigger than the platform standard to give more
+    room to the search box-->
+
+    <!-- Margin to the left and right of the search box. -->
+    <!-- Margin above the search box. -->
+    <!-- Margin below the search box. -->
+    <!-- Search box interior padding - left -->
+    <!-- Search box interior padding - right -->
+
+    <!-- Height of the call log actions section for each call log entry -->
+
+    <!-- Padding for icons to increase their touch target. Icons are typically 24 dps in size
+         so this extra padding makes the entire touch target 40dp -->
+
+
+    <!-- Dimensions for individual preference cards -->
+
+    <!-- Dimensions for promo cards -->
+
+    <!-- Size of entries in blocked numbers list -->
+
+
+    <!-- Padding between the action bar's bottom edge and the first header
+         in contacts/group lists. -->
+
+    <!-- Minimum height used with @drawable/list_section_divider_holo_custom.
+         Right now the drawable has implicit 32dip minimal height, which is confusing.
+         This value is for making the hidden configuration explicit in xml. -->
+
+    <!--  Horizontal padding in between contact tiles -->
+    <!--  Horizontal whitespace (both padding and margin) before the first tile and after the last tile -->
+
+    <!-- Left and right padding for a contact detail item -->
+
+    <!-- ContactTile Layouts -->
+    <!--
+      Use sp instead of dip so that the shadowbox heights can all scale uniformly
+      when the font size is scaled for accessibility purposes
+    -->
+
+    <!-- Top padding of the ListView in the contact tile list -->
+
+    <!-- For contact filter setting screens -->
+
+    <!-- Padding to be used between a visible scrollbar and the contact list -->
+
+    <!-- Width of a contact list item section header. -->
+
+    <!-- Size of the shortcut icon. 0dip means: use the system default -->
+
+    <!-- Text size of shortcut icon overlay text -->
+
+    <!-- Extra vertical padding for darkened background behind shortcut icon overlay text -->
+
+    <!-- Width of height of an icon from a third-party app in the networks section of the contact card. -->
+
+    <!-- Empty message margins -->
+
+    <!-- contact browser list margins -->
+
+    <!-- Dimensions for "No contacts" string in PhoneFavoriteFragment for the All contacts
+         with phone numbers section
+    -->
+
+    <!-- Dimensions for contact letter tiles -->
+
+
+    <!-- Right margin of the floating action button -->
+    <!-- Bottom margin of the floating action button -->
+    <!-- Offset of bottom margin of the floating action button used when dialpad is up -->
+
+    <!-- Height of the selection indicator of a tab. -->
+    <!-- Size of text in tabs. -->
+
+    <!-- Padding around the icon in the search box. -->
+    <!-- Size of the icon (voice search, back arrow) in the search box. -->
+    <!-- Size of the close icon.-->
+    <!-- Padding around the close button. It's visible size without padding is 24dp. -->
+    <!-- Padding around back arrow icon in the search box -->
+    <!-- Left margin of the text field in the search box. -->
+    <!-- Search box text size -->
+
+    <!-- Top margin for the Frequently Contacted section title -->
+    <!-- Top margin for the Frequently Contacted section title, when the title is the first
+         item in the list -->
+
+    <!-- Size of icon for contacts number shortcuts -->
+
+    <!-- Padding used around the periphery of the call subject dialog, as well as in between the
+         items. -->
+    <!-- Padding used between lines of text in the call subject dialog. -->
+    <!-- Size of the contact photo in the call subject dialog. -->
+    <!-- Margin above the edit text in the call subject dialog. -->
+    <!-- Size of primary text in the call subject dialog. -->
+    <!-- Size of secondary text in the call subject dialog. -->
+    <!-- Row padding for call subject history items. -->
+    <!-- Text dimensions for dialpad keys -->
+    <dimen name="dialpad_key_numbers_default_size">36sp</dimen>
+    <dimen name="dialpad_key_letters_size">12sp</dimen>
+    <dimen name="dialpad_key_pound_size">23sp</dimen>
+    <dimen name="dialpad_key_star_size">36sp</dimen>
+    <dimen name="dialpad_key_height">64dp</dimen>
+    <dimen name="dialpad_key_number_default_margin_bottom">3dp</dimen>
+    <!-- Zero key should have less space between self and text because "+" is smaller -->
+
+
+    <!-- Top/Bottom padding around the ILD rate display box. -->
+
+    <!-- Zero key should have less space between self and text because "+" is smaller -->
+    <dimen name="dialpad_zero_key_number_default_margin_bottom">1dp</dimen>
+    <dimen name="dialpad_symbol_margin_bottom">13dp</dimen>
+    <dimen name="dialpad_digits_text_size">34sp</dimen>
+    <dimen name="dialpad_digits_text_min_size">24sp</dimen>
+    <dimen name="dialpad_digits_height">60dp</dimen>
+    <!-- Provide adjustable dimensions so that different apps can use different dialpad sizes. -->
+    <dimen name="dialpad_digits_padding">16dp</dimen>
+    <dimen name="dialpad_digits_menu_left_padding">8dp</dimen>
+    <dimen name="dialpad_digits_menu_right_padding">10dp</dimen>
+    <dimen name="dialpad_voicemail_icon_padding_top">2dp</dimen>
+    <dimen name="dialpad_key_button_translate_y">100dp</dimen>
+    <dimen name="dialpad_overflow_margin">8dp</dimen>
+    <dimen name="dialpad_space_above_keys">14dp</dimen>
+    <dimen name="dialpad_space_below_keys">8dp</dimen>
+    <!-- The bottom space of the dialpad to account for the dial button -->
+
+    <!-- Top/Bottom padding around the ILD rate display box. -->
+    <dimen name="ild_margin_height">10dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="placeholder_image">50dp</dimen>
+    <dimen name="placeholder_text_height">8dp</dimen>
+
+
+    <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <!-- Width of the floating action button -->
+    <!-- Corner radius of the floating action button -->
+    <!-- Z translation of the floating action button -->
+    <!-- Padding to be applied to the bottom of lists to make space for the floating action
+         button -->
+
+    <!--
+          Drag to remove view (in dp because it is used in conjunction with a statically
+          sized icon
+    -->
+
+    <!-- Call Log -->
+
+    <!-- Size of contact photos in the call log and call details. -->
+
+    <!-- Size of call provider icon width and height -->
+
+    <!-- Match call_button_height to Phone's dimens/in_call_end_button_height -->
+
+    <!-- Dimensions for speed dial tiles -->
+
+    <!-- Padding from the last contact tile will provide the end padding. -->
+
+    <!-- Size of the star icon on the favorites tile. -->
+
+    <!-- Padding for the tooltip -->
+
+    <!-- Height of the actionBar - this is 8dps bigger than the platform standard to give more
+    room to the search box-->
+
+    <!-- Margin to the left and right of the search box. -->
+    <!-- Margin above the search box. -->
+    <!-- Margin below the search box. -->
+    <!-- Search box interior padding - left -->
+    <!-- Search box interior padding - right -->
+
+    <!-- Height of the call log actions section for each call log entry -->
+
+    <!-- Padding for icons to increase their touch target. Icons are typically 24 dps in size
+         so this extra padding makes the entire touch target 40dp -->
+
+
+    <!-- Dimensions for individual preference cards -->
+
+    <!-- Dimensions for promo cards -->
+
+    <!-- Size of entries in blocked numbers list -->
+
+
+    <!-- Padding between the action bar's bottom edge and the first header
+         in contacts/group lists. -->
+
+    <!-- Minimum height used with @drawable/list_section_divider_holo_custom.
+         Right now the drawable has implicit 32dip minimal height, which is confusing.
+         This value is for making the hidden configuration explicit in xml. -->
+
+    <!--  Horizontal padding in between contact tiles -->
+    <!--  Horizontal whitespace (both padding and margin) before the first tile and after the last tile -->
+
+    <!-- Left and right padding for a contact detail item -->
+
+    <!-- ContactTile Layouts -->
+    <!--
+      Use sp instead of dip so that the shadowbox heights can all scale uniformly
+      when the font size is scaled for accessibility purposes
+    -->
+
+    <!-- Top padding of the ListView in the contact tile list -->
+
+    <!-- For contact filter setting screens -->
+
+    <!-- Padding to be used between a visible scrollbar and the contact list -->
+
+    <!-- Width of a contact list item section header. -->
+
+    <!-- Size of the shortcut icon. 0dip means: use the system default -->
+
+    <!-- Text size of shortcut icon overlay text -->
+
+    <!-- Extra vertical padding for darkened background behind shortcut icon overlay text -->
+
+    <!-- Width of height of an icon from a third-party app in the networks section of the contact card. -->
+
+    <!-- Empty message margins -->
+
+    <!-- contact browser list margins -->
+
+    <!-- Dimensions for "No contacts" string in PhoneFavoriteFragment for the All contacts
+         with phone numbers section
+    -->
+
+    <!-- Dimensions for contact letter tiles -->
+
+
+    <!-- Right margin of the floating action button -->
+    <!-- Bottom margin of the floating action button -->
+    <!-- Offset of bottom margin of the floating action button used when dialpad is up -->
+
+    <!-- Height of the selection indicator of a tab. -->
+    <!-- Size of text in tabs. -->
+
+    <!-- Padding around the icon in the search box. -->
+    <!-- Size of the icon (voice search, back arrow) in the search box. -->
+    <!-- Size of the close icon.-->
+    <!-- Padding around the close button. It's visible size without padding is 24dp. -->
+    <!-- Padding around back arrow icon in the search box -->
+    <!-- Left margin of the text field in the search box. -->
+    <!-- Search box text size -->
+
+    <!-- Top margin for the Frequently Contacted section title -->
+    <!-- Top margin for the Frequently Contacted section title, when the title is the first
+         item in the list -->
+
+    <!-- Size of icon for contacts number shortcuts -->
+
+    <!-- Padding used around the periphery of the call subject dialog, as well as in between the
+         items. -->
+    <!-- Padding used between lines of text in the call subject dialog. -->
+    <!-- Size of the contact photo in the call subject dialog. -->
+    <!-- Margin above the edit text in the call subject dialog. -->
+    <!-- Size of primary text in the call subject dialog. -->
+    <!-- Size of secondary text in the call subject dialog. -->
+    <!-- Row padding for call subject history items. -->
+    <!-- Zero key should have less space between self and text because "+" is smaller -->
+
+
+    <!-- Top/Bottom padding around the ILD rate display box. -->
+
+    <!-- Zero key should have less space between self and text because "+" is smaller -->
+    <!-- Provide adjustable dimensions so that different apps can use different dialpad sizes. -->
+    <!-- The bottom space of the dialpad to account for the dial button -->
+
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="margin_top">7dp</dimen>
+
+
+    <dimen name="global_padding_x_small">4dp</dimen>
+    <dimen name="global_padding_small">6dp</dimen>
+    <dimen name="global_padding">8dp</dimen>
+    <dimen name="global_padding_middle">12dp</dimen>
+    <dimen name="global_padding_extra">18dp</dimen>
+    <dimen name="global_padding_x_extra">24dp</dimen>
+    <dimen name="global_padding_2x_extra">30dp</dimen>
+    <dimen name="global_padding_3x_extra">34dp</dimen>
+    <dimen name="global_padding_4x_extra">48dp</dimen>
+
+    <dimen name="global_margin_x_small">4dp</dimen>
+    <dimen name="global_margin">8dp</dimen>
+    <dimen name="global_margin_middle">12dp</dimen>
+    <dimen name="global_margin_extra">18dp</dimen>
+    <dimen name="global_margin_x_extra">24dp</dimen>
+
+    <dimen name="player_base_height">220dp</dimen>
+
+    <dimen name="player_controller_base_height">40dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

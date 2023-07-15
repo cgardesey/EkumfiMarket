@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/bubble_layout_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:id="@+id/bubble_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_out"
+
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/identifierLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:minWidth="144dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    tools:text="Cyril" />
+
+                <TextView
+                    android:id="@+id/instructorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teacher"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_msg_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/reply_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="visible" />
+
+                <include
+                    layout="@layout/link_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone" />
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                    android:id="@+id/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="144dp"
+                    android:textColor="@android:color/primary_text_light"
+                    app:emojiconAlignment="baseline"
+                    app:emojiconSize="20sp"
+                    tools:text="Hi! new message" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/doc_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/pdf_img"
+                    android:layout_width="224dp"
+                    android:layout_height="64dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    tools:src="@drawable/document" />
+
+                <RelativeLayout
+                    android:id="@+id/upcomingdoc"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:background="#80E0E0E0"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/docIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/document" />
+
+                    <RelativeLayout
+                        android:id="@+id/downloadStatusWrapper_doc"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp">
+
+                        <ProgressBar
+                            android:id="@+id/pbar"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerInParent="true"
+                            android:indeterminate="true"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/uploadImg_doc"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/download" />b
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/docTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@id/downloadStatusWrapper_doc"
+                        android:layout_toRightOf="@id/docIcon"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@android:color/primary_text_light"
+                        tools:text="Document title" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pic_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/photoImageView"
+                    android:layout_width="176dp"
+                    android:layout_height="160dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/downloadStatusWrapper_pic"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ProgressBar
+                        android:id="@+id/pbar_pic"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/uploadImg_pic"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        tools:src="@drawable/download" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="image"
+                        android:layout_below="@id/uploadImg_pic"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:textStyle="italic"/>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="96dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#80000000"
+                    emojicon:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/download" />
+
+                        <TextView
+                            android:id="@+id/retry_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/actual_white"
+                            android:textSize="16sp"
+                            tools:text="74 KB" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vid_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/videoImageView"
+                    android:layout_width="176dp"
+                    android:layout_height="160dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/downloadStatusWrapper_vid"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ProgressBar
+                        android:id="@+id/pbar_vid"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/uploadImg_vid"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        tools:src="@drawable/download" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="video"
+                        android:layout_below="@id/uploadImg_vid"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:textStyle="italic"/>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/retry_vid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="96dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#80000000"
+                    emojicon:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/download" />
+
+                        <TextView
+                            android:id="@+id/retry_text_vid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/actual_white"
+                            android:textSize="16sp"
+                            tools:text="74 KB" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/play"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#80000000"
+                    emojicon:cardCornerRadius="28dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:src="@drawable/play" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/audio_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+                    android:id="@+id/audio_player"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/downloadStatusWrapper_audio"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ProgressBar
+                        android:id="@+id/pbar_audio"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/uploadImg_audio"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        tools:src="@drawable/download" />
+
+                    <TextView
+                        android:id="@+id/audiotext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="audio"
+                        android:layout_below="@id/uploadImg_audio"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:textStyle="italic"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/map_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/mapImageView"
+                    android:layout_width="192dp"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/downloadStatusWrapper_map"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ProgressBar
+                        android:id="@+id/pbar_map"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/uploadImg_map"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        tools:src="@drawable/download" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="map"
+                        android:layout_below="@id/uploadImg_map"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:textStyle="italic"/>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/retry_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="96dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#80000000"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/upload" />
+
+                        <TextView
+                            android:id="@+id/retry_text_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/actual_white"
+                            android:textSize="16sp"
+                            tools:text="74 KB" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/live_loc_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/liveLocImageView"
+                    android:layout_width="192dp"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/live_loc_pin" />
+
+                <TextView
+                    android:paddingTop="8dp"
+                    android:id="@+id/live_location_ended"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/liveLocImageView"
+                    android:text="Live location ended."
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/stop_sharing"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/liveLocImageView"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:text="Stop sharing"
+                    android:textColor="@color/red"
+                    android:textAlignment="center"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/downloadStatusWrapper_live_loc"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ProgressBar
+                        android:id="@+id/pbar_live_loc"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/uploadImg_live_loc"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        tools:src="@drawable/download" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="map"
+                        android:layout_below="@id/uploadImg_live_loc"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:textStyle="italic"/>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/retry_live_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="96dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#80000000"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/upload" />
+
+                        <TextView
+                            android:id="@+id/retry_text_live_loc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/actual_white"
+                            android:textSize="16sp"
+                            tools:text="74 KB" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="168dp">
+
+                <LinearLayout
+                    android:id="@+id/statusWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|end"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+
+                        tools:text="2:30 PM" />
+
+                    <ImageView
+                        android:id="@+id/statusImg"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_timer_round" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/metaData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_toLeftOf="@id/statusWrapper"
+                    android:textSize="12sp"
+                    tools:text="911 pages . 354 kb . pdf" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="4dp"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#f2f4f2">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+        <ImageView
+            android:id="@+id/more_details"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:src="@drawable/menu_vertical_black"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:elevation="8dp"
+            android:id="@+id/featured_layout"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/circle_background_white"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1" />
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@color/transparent"
+                android:src="@drawable/featured" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

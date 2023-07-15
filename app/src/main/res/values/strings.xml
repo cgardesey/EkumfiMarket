@@ -1,0 +1,795 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="default_notification_channel_id" translatable="false">uvstudentnotifchannelid</string>
+    <string name="msg_token_fmt" translatable="false">Message token fmt</string>
+    <string name="app_name">Ekumfi Juice</string>
+    <string name="resetpassword">Reset Password</string>
+
+    <string name="title_explore">Explore</string>
+    <string name="title_app">Univirtual</string>
+    <string name="signin_message">Sign in to access quality tuition and materials</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_accout">Account</string>
+    <string name="title_enrolment">Services</string>
+    <string name="title_achievements">Achievements</string>
+
+    <string name="monday">MONDAY</string>
+    <string name="tuesday">TUESDAY</string>
+    <string name="wednesday">WEDNESDAY</string>
+    <string name="thursday">THURSDAY</string>
+    <string name="friday">FRIDAY</string>
+    <string name="saturday">SATURDAY</string>
+    <string name="sunday">SUNDAY</string>
+
+    <string name="addreminder">Add Reminder</string>
+
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_item_reply">Delete</string>
+
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+
+    <string name="country_prompt">Choose a Title</string>
+
+    <string-array name="title_arrays">
+        <item>None selected</item>
+        <item>Prof.</item>
+        <item>Dr.</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss</item>
+    </string-array>
+
+    <string-array name="identification_arrays">
+        <item>None selected</item>
+        <item>NHIS</item>
+        <item>Voter\'s ID</item>
+        <item>Ghana Card</item>
+        <item>Passport</item>
+    </string-array>
+
+    <string-array name="vehicle_type_arrays">
+        <item>None selected</item>
+        <item>Small Car</item>
+        <item>Motor Bike</item>
+        <item>Van</item>
+    </string-array>
+
+    <string-array name="duration_arrays">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+
+    <string-array name="max_courses_arrays">
+        <item>3 subjects</item>
+        <item>8 subjects</item>
+    </string-array>
+
+    <string-array name="marital_arrays">
+        <item>None selected</item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+    <string-array name="gender_arrays">
+        <item>None selected</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="education_arrays">
+        <item>None selected</item>
+        <item>Basic</item>
+        <item>Secondary</item>
+        <item>Vocational/Technical</item>
+        <item>Bachelors Degree</item>
+        <item>Post Graduate</item>
+    </string-array>
+
+    <string-array name="seller_type_arrays">
+        <item>None selected</item>
+        <item>Retailer</item>
+        <item>Distributor</item>
+    </string-array>
+
+    <string-array name="employment_arrays">
+        <item>None selected</item>
+        <item>Worker</item>
+        <item>Student</item>>
+    </string-array>
+
+    <string-array name="years_0f_exp_arrays">
+        <item>None selected</item>
+        <item>1 - 3 years</item>
+        <item>4 - 9 years</item>
+        <item>10+ years</item>
+    </string-array>
+
+    <string name="search">Search...</string>
+
+
+    <!-- Strings related to attemptSignin -->
+    <string name="email">Email</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="title_timetable">Timetable</string>
+    <string name="attendance">Attendance</string>
+    <string name="profile">Profile</string>
+    <string name="assignment">Assignment</string>
+    <string name="upcoming">Upcoming Today</string>
+    <string name="allmyclasses">All My Classes</string>
+    <string name="expiredsubscriptions">Inactively Subscribed</string>
+    <string name="activesubscriptions">Actively Subscribed</string>
+    <string name="status">Status</string>
+    <string name="score">Score</string>
+    <string name="viewassignment">View Assignment</string>
+    <string name="submitassignment">Submit Assignment</string>
+    <string name="viewsubmitedassignment">View Submitted Assignment</string>
+    <string name="topic">Topic</string>
+    <string name="coursepath">Course</string>
+    <string name="website">Official Website</string>
+    <string name="display">Display</string>
+    <string name="webportal">Web Portal</string>
+    <string name="logout">Logout</string>
+    <string name="nightmode">Night mode</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="enterclass">Enter classroom</string>
+    <string name="renewsubscription">Subscribe</string>
+    <string name="ratecourse">Rate Course</string>
+
+    <string name="unenroll">Unenroll</string>
+
+    <string name="uploadmaterial">Click to upload</string>
+    <string name="uploadmessage">Submit your course work by uploading using the button below</string>
+    <string name="mypayments">My Recent Momo Payments</string>
+
+    <string name="inclass">In class</string>
+    <string name="playback">Playback</string>
+    <string name="selectoption">Select resource option</string>
+    <string name="classchat">Class chat</string>
+    <string name="classquiz">Class quiz</string>
+    <string name="pastquestions">Past Questions</string>
+
+    <string name="classconferencecall">Class conference call</string>
+    <string name="liveclassaudiostream">Live class audio stream</string>
+    <string name="classdocs">Class Documents</string>
+    <string name="classsession">Class session</string>
+    <string name="recordedclassconferencecall">Recorded class conference call</string>
+    <string name="recordedclassaudiostream">Recorded class audio stream</string>
+    <string name="classdoc">Upcoming Class Document</string>
+    <string name="recordedclassvideostream">Recorded class video stream</string>
+    <string name="liveclass">Live class stream</string>
+    <string name="liveclassvideostream">Live class video stream</string>
+    <string name="liveclassstream">Live class stream</string>
+    <string name="classpayback">Class playback</string>
+    <string name="recordedaudio">Recorded class audio</string>
+    <string name="recordedclassvideos">Recorded class videos</string>
+    <string name="downloadableclassvideos">Downloadable class videos</string>
+    <string name="description_delete_button">backspace</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_star_number">*</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_pound_number">#</string>
+    <string name="description_voicemail_button">voicemail</string>
+    <string name="description_image_button_plus">plus</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_0_letters">+</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_1_letters"></string>
+    <!--  Do not translate. -->
+    <string name="dialpad_2_letters">ABC</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_3_letters">DEF</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_4_letters">GHI</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_5_letters">JKL</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_6_letters">MNO</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_7_letters">PQRS</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_8_letters">TUV</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_9_letters">WXYZ</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_star_letters"></string>
+    <!--  Do not translate. -->
+    <string name="dialpad_pound_letters"></string>
+    <!-- String describing the back button in the dialpad. -->
+    <string name="description_dialpad_back">Navigate back</string>
+    <!-- String describing the overflow menu button in the dialpad. -->
+    <string name="description_dialpad_overflow">More options</string>
+    <!-- Dialog message which is shown when the user tries to check voicemail
+       while the system isn't ready for the access. [CHAR LIMIT=NONE] -->
+    <string name="read_file">This app needs access to your file storage so that it can read files.</string>
+    <string name="openfile">Open file</string>
+    <string name="askquestion">Ask question</string>
+    <string name="speaker">Speaker</string>
+    <string name="leaveclass">Leave class</string>
+    <string name="endplayback">End playback</string>
+    <string name="mute">Mute</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="keypad">Keypad</string>
+    <string name="addcall">Add call</string>
+    <string name="active">Active</string>
+
+    <string name="rationale_doc_picker">We need this pemission to read documents from device.</string>
+
+    <string name="title_learn">My Courses</string>
+    <string name="messages">My Groups</string>
+    <string name="cancel">Cancel</string>
+    <string name="unmute">Unmute</string>
+    <string name="sackfromclass">Sack student</string>
+    <string name="contact">Phone number</string>
+    <string name="createcourse">Create Course</string>
+    <string name="duration">Duration :</string>
+    <string name="enterstudentphone">Enter student phone number</string>
+    <string name="go">Go</string>
+    <string name="next">Next</string>
+    <string name="almostdone">Almost done!</string>
+    <string name="verifymobilenumber">Verify MTN mobile number</string>
+    <string name="shortfreecall">A short, <b>free</b> call will soon be  placed to our system to verify your number</string>
+    <string name="didntplacecall">Didn\'t receive call?</string>
+    <string name="completeverification">Click to complete verification</string>
+    <string name="changenumber">Change number</string>
+    <string name="answerhere">Answer here ...</string>
+    <string name="myquestions">My questions</string>
+    <string name="typequestionhere">Type question here</string>
+    <string name="possibleanswers">Possible answers</string>
+    <string name="questionnumber">Question number :</string>
+    <string name="newgroup">New group</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="startgroupcall">Start group call</string>
+    <string name="startover">Clear group and start over</string>
+    <string name="defaul_sim_msg"><u>Multi-sim detected. Please set default sim for calls before clicking next otherwise verification will fail</u></string>
+    <string name="live_interactive">Live interactive class lessons from seasoned instructors</string>
+    <string name="available_for_download">Live class lessons become available for download or restreaming and you can follow at your own pace.</string>
+    <string name="free_data">Free internet data bundle to subscribers for accessing external links</string>
+    <string name="live">Live</string>
+    <string name="recorded">Recorded</string>
+    <string name="internet">Internet</string>
+    <string name="get_started">Get Started</string>
+    <string name="pending_verification">Pending verification</string>
+    <string name="almost_done">Almost done!</string>
+    <string name="retry_in">Retry in :</string>
+    <string name="retry">Retry</string>
+    <string name="error_contacting_server">Error contacting server. Please try again</string>
+    <string name="assignment_date">Assignment Date</string>
+    <string name="verification_failed">Verification failed!</string>
+    <string name="number_cannot_be_used">This number cannot be used because it is linked to a teacher account.</string>
+    <string name="unsubmitted">Unsubmitted</string>
+    <string name="my_groups">My Groups</string>
+    <string name="inviting_to_class">Inviting to class...</string>
+    <string name="locking_student">Locking student...</string>
+    <string name="unlocking_student">Unlocking student..</string>
+    <string name="success">Success!</string>
+    <string name="kicking_out_student">Kicking student out ...</string>
+    <string name="successfully_kicked_student_out">Successfully kicked student out ...</string>
+    <string name="kick_action_failed_for_user">Kick action failed for user</string>
+    <string name="student_not_in_class">Student not in class ...</string>
+    <string name="muting_student">Muting student</string>
+    <string name="successfully_muted_student">Successfully muted student</string>
+    <string name="unmuting_student">Unmuting student ...</string>
+    <string name="successfully_unmuted_student">Successfully unmuted student</string>
+    <string name="administrator">ADMINISTRATOR</string>
+    <string name="renew_subscription">Renew Subscription</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="seconds">seconds</string>
+    <string name="feching_data">Fetching data ...</string>
+    <string name="call_timed_out">Call timed out</string>
+    <string name="placing_call_failed">Placing call failed. Default sim may not have been set.</string>
+    <string name="click_to_add_to_group">Click on any student below to add to group</string>
+    <string name="no_unsubmitted_assignments">You currently have no unsubmitted assignments.There are currently no recorded classes to stream \n\nClick on the refresh icon at the top right corner to check for newly added assignments</string>
+    <string name="no_submitted_assignments">You currently have no submitted assignments.</string>
+    <string name="unmute_call">Unmute call</string>
+    <string name="call_muted">Call muted</string>
+    <string name="successfully_locked_student">Successfully locked student</string>
+    <string name="resume_call">Resume call</string>
+    <string name="call_paused">Call paused</string>
+    <string name="call_resumed">Call resumed</string>
+    <string name="pause">Pause</string>
+    <string name="description">Description</string>
+    <string name="about_instructor">About instructor</string>
+    <string name="offered_by">Offered by</string>
+    <string name="enrol">Enrol</string>
+    <string name="courses">Courses</string>
+    <string name="error_loading_data">Error loading data.</string>
+    <string name="there_are_currently_no_instructors_for_this_course">There are currently no instructors for this course.</string>
+    <string name="_1_of_2">1 of 2</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="title">Title* :</string>
+    <string name="gender">Gender* :</string>
+    <string name="answer">Answer</string>
+    <string name="charge">Charge</string>
+    <string name="payment_description">Payment description</string>
+    <string name="response_message">Response message</string>
+    <string name="pending_transaction">Pending transaction</string>
+    <string name="_2_of_2">2 of 2</string>
+    <string name="educational_background">Educational Background</string>
+    <string name="highest_educational_level">Highest Educational level* :</string>
+    <string name="there_are_currently_no_recorded_audio">There are currently no recorded audio</string>
+    <string name="title_1">Title</string>
+    <string name="submission_date">Submission Date</string>
+    <string name="teacher">~Teacher</string>
+    <string name="attach_file_s">Attach file(s)</string>
+    <string name="taught_by">Taught by:</string>
+    <string name="subscription_expires_on">Subscription expires on:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="class_quizzes">Class Quizzes</string>
+    <string name="quiz_list">Quiz List</string>
+    <string name="you_currently_have_no_quizzes_for_this_course">You currently have no quizzes for this course.There are currently no recorded classes to stream \n\nClick on the refresh icon at the top right corner to check for newly quizzes</string>
+    <string name="you_currently_have_no_submitted_quizzes_for_this_course">You currently have no submitted quizzes for this course.</string>
+    <string name="calling_our_system_to_verify_your_number">Calling our system to verify your number...</string>
+    <string name="call_participants">Call Participants</string>
+    <string name="you_have_no_participant_in_group_call_yet">You have no participant in group call yet   Group participants show here as soon as they join the call</string>
+    <string name="gallery">Gallery</string>
+    <string name="document">Document</string>
+    <string name="camera">Camera</string>
+    <string name="enrolments_will_show_here_after_you_enrol_into_course_s">Enrolments will show here after you enrol into course(s).</string>
+    <string name="payments">Payments</string>
+    <string name="grade">Grade:</string>
+    <string name="discussion_groups">Discussion groups</string>
+    <string name="share">Share</string>
+    <string name="end_group_call">End Group Call</string>
+    <string name="there_is_no_document_file_for_this_playback">There is no document file for this playback.</string>
+    <string name="there_is_no_document_file_for_this_audio_stream">There is no document file for this audio stream.</string>
+    <string name="there_is_no_document_file_for_this_class_session">There is currently no edited document file for this class session.</string>
+    <string name="active_call">Active Call...</string>
+    <string name="submit_date">Submit date</string>
+    <string name="submitted">Submitted</string>
+    <string name="optional_review">Optional review (200 characters max.)</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="_233546101177">233546101177</string>
+    <string name="_246104545">246104545</string>
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name*</string>
+    <string name="assignment_title">Assignment title*</string>
+    <string name="name_of_institution">Name of institution*</string>
+    <string name="swipe_to_previous_page">Swipe to previous page</string>
+    <string name="swipe_to_next_page">Swipe to next page</string>
+    <string name="other_name_s">Other Name(s)</string>
+    <string name="search_here">Search services</string>
+    <string name="group_name">Group name</string>
+    <string name="price_per_week">Price per week:</string>
+    <string name="logged_in">Logged In</string>
+    <string name="date">Date</string>
+    <string name="submitted_assignment">Submitted Assignment</string>
+    <string name="please_enter_your_mtn_number">Please enter your MTN number</string>
+    <string name="you_currently_have_no_unsubmitted_assignments">You currently have no unsubmitted assignments.There are currently no recorded classes to stream \n\nClick on the refresh icon at the top right corner to check for newly added recorded classes</string>
+    <string name="exit">Exit?</string>
+    <string name="previous">Previous</string>
+    <string name="institution_type">Institution Type</string>
+    <string name="address">Address</string>
+    <string name="invite_to_group">Invite to Group</string>
+    <string name="lock_participant">Lock Participant</string>
+    <string name="unlock_participants">Unlock Participants</string>
+    <string name="next_class_on">Next class on</string>
+    <string name="today_at">Today at</string>
+    <string name="no_upcoming_course">You currently have no upcoming courses for today.</string>
+    <string name="you_currently_have_no_live_classes">You currently have no live classes.</string>
+    <string name="no_active_subscriptions">You currently have no active subscriptions.</string>
+    <string name="no_expired_subscriptions">You currently have no expired subscriptions.</string>
+    <string name="enrolments_will_show_here">Enrolments will show here after you enrol into course(s).</string>
+    <string name="rating">rating</string>
+    <string name="no_ratings_available">No ratings available</string>
+    <string name="successfully_unenrolled">Successfully unenrolled!</string>
+    <string name="please_enter_number">Please enter number.</string>
+    <string name="invalid_mtn_number">Invalid MTN number!</string>
+    <string name="file_size_of">File size of</string>
+    <string name="larger_than_limit">is larger than maximum limit of 10M</string>
+    <string name="error_choosing_image">Error choosing image</string>
+    <string name="calling">Calling</string>
+    <string name="internet_connection_is_needed">Internet connection is needed.</string>
+    <string name="already_enrolled">You are already enrolled into this course!</string>
+    <string name="prompting_instructor">Prompting instructor...</string>
+    <string name="successfully_enrolled">Successfully enrolled!</string>
+    <string name="updating_profile">Updating profile...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="your_enrolment_is_pending_approval">Your enrolment into this course is pending approval.</string>
+    <string name="enrolment_request_successfully_sent">Enrolment request has been successfully sent. \n\nYou will receive a phone call on the mobile number you registered with to complete your enrolment process. \n\nOnce your enrolment is approved, you can click on the refresh icon on your enrolments page and enter class</string>
+    <string name="your_subscription_has_expired">Your subscription has expired.</string>
+    <string name="download_failed">Download failed.</string>
+    <string name="download_cancelled">Download cancelled.</string>
+    <string name="this_permission_is_mandatory_pls_allow_access">This permission is mandatory for the application. Please allow access.</string>
+    <string name="pls_correct_the_errors">Please correct the errors on all pages.</string>
+    <string name="your_score_is">Your score is</string>
+    <string name="no_live_chat_at_the_moment">There is no live chat for this course at the moment.</string>
+    <string name="mute_off">Mute off</string>
+    <string name="your_instructor_is_yet_to_start_class">Your instructor is yet to start class.</string>
+    <string name="no_live_class_at_the_moment">There is no live class for this course at the moment.</string>
+    <string name="no_live_video_class_at_the_moment">There is no live video class for this course at the moment.</string>
+    <string name="no_live_audio_class_at_the_moment">There is no live audio class for this course at the moment.</string>
+    <string name="audio_recording_cancelled">Audio recording cancelled.</string>
+    <string name="compresing_audio_file_for_upload">Compressing audio file for upload...</string>
+    <string name="pls_attach_file">Please attach file.</string>
+    <string name="cannot_select_more_than">Cannot select more than</string>
+    <string name="item">item</string>
+    <string name="sorry_no_document_found">Sorry! No document found.</string>
+    <string name="no_suitable_app_for_viewing_this_file">You may not have a suitable app for viewing this file.</string>
+    <string name="image_not_set">Image not set!</string>
+    <string name="file_already_added">File already added!</string>
+    <string name="assignment_successfully_submitted">Assignment successfully submitted!</string>
+    <string name="successfully_logged_out">Successfully logged out!</string>
+    <string name="page_not_found">Page not found.</string>
+    <string name="downloading">Downloadng...</string>
+    <string name="permissions">Permissions</string>
+    <string name="error_deleting_file_from_device">Error deleting file from device.</string>
+    <string name="minimum_rating_allowed_is_onestar">Minimum rating allowed is a one-star!</string>
+    <string name="successfully_submitted">Successfully submitted!</string>
+    <string name="no_student_selected">No students selected</string>
+    <string name="pls_enter_a_group_name">Please enter a group name</string>
+    <string name="invalid_number">Invalid number.</string>
+    <string name="sorry_document_file_not_exist_on_your_internal_storrage">Sorry, this document file doesn\'t exist on your device</string>
+    <string name="uploading_file">Uploading file...</string>
+    <string name="unsupported_file_format">Unsupported file format!</string>
+    <string name="successfully_updated">Successfully updated!</string>
+    <string name="connection_error">Connection error.</string>
+    <string name="timeout_error">Timeout error.</string>
+    <string name="authentication_failure">Authentication Failure.</string>
+    <string name="server_error">External application down.</string>
+    <string name="network_error">Network error.</string>
+    <string name="unenrolling">Unenrolling...</string>
+    <string name="pls_wait">Please wait...</string>
+    <string name="completing_verification">Completing verification...</string>
+    <string name="submitting_quiz">Submitting quiz...</string>
+    <string name="processing">Processing...</string>
+    <string name="enrolment_request">Enrolment Request</string>
+    <string name="course_belongs_to_an_institution">This course belongs to an institution. Send request to institution to enrol you into this course?</string>
+    <string name="enrolling">Enrolling...</string>
+    <string name="requesting_enrolment">Requesting enrolment...</string>
+    <string name="downloading_chat_document">Downloading chat document...</string>
+    <string name="joining_class">Joining class...</string>
+    <string name="checking_for_chat_session">Checking for chat session...</string>
+    <string name="checking_for_live_class">Checking for live class...</string>
+    <string name="checking_for_live_class_video_stream">Checking for live class video stream...</string>
+    <string name="checking_for_live_class_audio_stream">Checking for live class audio stream...</string>
+    <string name="pending_payment">Pending Payment</string>
+    <string name="price_change">Price Change</string>
+    <string name="dial_170">Please follow these steps if you do not see popup to approve payment from your mobile money wallet after clicking pay. \n\nDial *170# on the MTN mobile number you entered.\n\nSelect option 6. My Wallet.\n\nSelect option 3. My Approvals.\n\nEnter pin and approve pending transaction.\n\nOn the app, click on the refresh icon on this page.</string>
+    <string name="checking_for_upcoming_class_document">Checking for upcoming class document...</string>
+    <string name="checking_for_available_room">Checking for available room...</string>
+    <string name="downloading_class_document">Downloading class document...</string>
+    <string name="per_week">per week</string>
+    <string name="per_month">per month</string>
+    <string name="refresh_payment_tip">You can click on the refresh icon to refresh payment status</string>
+    <string name="refresh_timetable_tip">You can click on the refresh icon to reflect changes to timetable</string>
+    <string name="filter_courses_tip">Your can click the highlighted area to filter courses</string>
+    <string name="unenrol_tip">You can click on the highlighted area to view course information or to unenrol from a course</string>
+    <string name="enrol_tip">Your can click on the dropdown icon to enrol</string>
+    <string name="institution_info_tip">Click here for more information about an institution</string>
+    <string name="search_courses_tip">Search at the highlighted area for courses</string>
+    <string name="choose_course_tip">You can click on an item to guide you through choosing a course</string>
+    <string name="check_for_new_assignment_tip">You can click the highlighted area to check for new assignments</string>
+    <string name="information_about_assignment_tip">You can click on the dropdown icon to view assignment details</string>
+    <string name="check_for_new_quizzes_tip">You can click on the refresh icon to check for new quizzes</string>
+    <string name="hide_document_tip">You can click on the minimize icon to hide document</string>
+    <string name="click_anywhere_to_dismiss">\n\nClick anywhere on your screen to dismiss tip</string>
+    <string name="refreshing_enrolment_status">Refreshing enrolments status...</string>
+    <string name="refreshing_timetable">Refreshing timetable...</string>
+    <string name="still_pending_approval">You previously sent a request to enrol into this course.  Your request is still pending approval. \n\nThank you</string>
+    <string name="ok">Ok</string>
+    <string name="refreshing_payment_status">Refreshing payments status...</string>
+    <string name="checking_for_new_videos">Checking for new videos...</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="checking_for_new_assignment">Checking for new assignments...</string>
+    <string name="checking_for_new_quizzes">Checking for new quizzes...</string>
+    <string name="crop_image">Crop Image</string>
+    <string name="share_download_url">Share Download url!</string>
+    <string name="me">Me</string>
+    <string name="playback_in_session">Playback in session</string>
+    <string name="group_call_in_session">Group call in session</string>
+    <string name="contact_permissions_is_required">Contacts permission is required to show contact information inside call notification.</string>
+    <string name="outgoing">Outgoing</string>
+    <string name="incoming">Incoming</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="delete_">Delete?</string>
+    <string name="we_need_this_permission_to_display_chat_messages">We need this pemission to display chat messages.</string>
+    <string name="class_in_session">Class in session</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="use_system_default_calling_app_for_calls">Use system default calling app for calls</string>
+    <string name="use_system_app_for_calls">Use School Direct Student app for calls</string>
+    <string name="file_no_longer_available_for_download">Sorry! This file is no longer available for download</string>
+    <string name="topics">Topics</string>
+    <string name="mute_call">Mute call</string>
+    <string name="on_hold">On hold</string>
+    <string name="hold_call">Hold call</string>
+    <string name="filter_payment_status">Filter status, number</string>
+    <string name="grant_permission_to_use_this_app_as_the_default_calling_app">In order for this app to function, please grant permission to use this app as the default calling app when asked to</string>
+    <string name="course_description">Course Description</string>
+    <string name="you_currently_have_no_payments_made">You currently have no recent payments.  \n\nClick on the refresh icon at the top right corner to check for recent payments</string>
+    <string name="no_file_available">No file available for download</string>
+    <string name="no_videos_available">No Videos Available</string>
+    <string name="no_data_available">No data available.</string>
+    <string name="preschool">Pre-School</string>
+    <string name="primary_school">Primary School</string>
+    <string name="jhs">JHS</string>
+    <string name="shs">SHS</string>
+    <string name="preuniversity">Pre-University</string>
+    <string name="university">University</string>
+    <string name="professional">Professional</string>
+    <string name="vocational">Vocational</string>
+    <string name="your_are_already_subscribed">You are already subscribed to this course.</string>
+    <string name="already_have_a_processing_payment">You already have a processing payment pending. \n\nPlease wait for at least</string>
+    <string name="before_trying_again">before trying again.</string>
+    <string name="try_again_later">You already have a processing payment. \n\nPlease try again later</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="already_subscribed">Already Subsribed</string>
+    <string name="not_registered">Not Registered</string>
+    <string name="number_is_not_registered_for_mobile_money">The number entered is not registered for mobile money</string>
+
+    <string name="instructor_calling">Instructor Calling...</string>
+    <string name="accept_invitation_to_enter_live_class">Accept invitation to join live class?</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="terms_and_conditions_text"><b>Please read these terms and conditions carefully before using Our Service</b>\n
+
+
+<b>Interpretation and Definitions</b>\n
+        <b>Interpretation</b>\n
+The words of which the initial letter is capitalized have meanings defined under the following conditions.
+
+The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.\n\n
+
+        <b>Definitions</b>\n
+For the purposes of these Terms and Conditions:\n\n
+
+        <b>Affiliate</b> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.\n
+
+<b>Company</b> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to School Direct.\n\n
+
+        <b>Country</b> refers to: Ghana, Nigeria, Zambia and Ivory Coast\n\n
+
+<b>Device</b> means any device that can access the Service such as a computer, a cellphone or a digital tablet.\n\n
+
+<b>Service</b> refers to the Mobile app and website.\n\n
+
+<b>Terms and Conditions</b> (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created by the legal team of School Direct.\n
+
+<b>Third-party Social Media Service</b> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.\n\n
+
+<b>Website</b> refers to School Direct, accessible from https://www.univirtualschools.com/\n
+
+<b>You</b> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.\n\n\n
+
+<b>Acknowledgment</b>\n
+These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.\n\n
+
+Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.\n\n
+
+By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.\n\n
+
+Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.\n\n
+
+<b>Links to Other Websites</b>\n
+Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.\n\n
+
+The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.\n\n
+
+We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.\n\n
+
+<b>Termination</b>\n
+We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.\n\n
+
+Upon termination, Your right to use the Service will cease immediately.\n\n
+
+<b>Limitation of Liability</b>\n
+Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven\'t purchased anything through the Service.\n\n
+
+To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.\n\n
+
+Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party\'s liability will be limited to the greatest extent permitted by law.\n\n
+
+<b>"AS IS" and "AS AVAILABLE" Disclaimer</b>\n
+The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.\n\n
+
+Without limiting the foregoing, neither the Company nor any of the company\'s provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.\n\n
+
+Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.\n\n
+
+<b>Governing Law</b>\n
+The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.\n\n
+
+<b>Disputes Resolution</b>\n
+If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.\n\n
+
+<b>For European Union (EU) Users</b>\n
+If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.\n\n
+
+<b>United States Legal Compliance</b>\n
+You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.\n\n
+
+<b>Severability and Waiver</b>\n\n
+<b>Severability</b>\n
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.\n\n
+
+<b>Waiver</b>\n
+Except as provided herein, the failure to exercise a right or to require performance of an obligation under this Terms shall not effect a party\'s ability to exercise such right or require such performance at any starttime thereafter nor shall be the waiver of a breach constitute a waiver of any subsequent breach.\n\n
+
+<b>Translation Interpretation</b>\n
+These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.\n\n
+
+<b>Changes to These Terms and Conditions</b>\n
+We reserve the right, at Our sole discretion, to modify or replace these Terms at any starttime. If a revision is material We will make reasonable efforts to provide at least 30 days\' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.\n\n
+
+By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.\n\n
+
+<b>Contact Us</b>\n
+If you have any questions about these Terms and Conditions, You can contact us:\n\n
+
+By emailaddress: info@univirtualschools.com\n\n\n
+    </string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="error_occured">Error occured!</string>
+    <string name="submit_test">Submit Test</string>
+    <string name="class_stats_at">class starts @</string>
+    <string name="be_sure_to_download">Be sure to download upcoming class document if you have not already done so.</string>
+    <string name="faqs">Frequently Asked Questions</string>
+    <string name="how_to_approve_payments">How to approve payment</string>
+    <string name="how_to_enter_live_class">How to enter live class in case I miss phone call invitation from my instructor to enter class</string>
+    <string name="go_to_enrolments_page">1. Go to enrolments page. \n2. Click \'ENTER CLASSROOM\' button. \n3. Click \'live class\' button to enter live class</string>
+    <string name="how_to_use_system_default_for_calls">How to use system default calling app for calls</string>
+    <string name="how_to_use_app_for_calls">How to use \'School Direct Student\' app for calls</string>
+    <string name="button_displays_subscribe">The button on my enrolments page still displays \'SUBSCRIBE\' after subscribing</string>
+    <string name="how_to_ask_question">How to ask question if I do not enter live class with \'School Direct Student\' app as default calling app</string>
+    <string name="where_to_locate_downloaded_class_files">Where to locate downloaded class files</string>
+    <string name="all_files_and_videos_are_downloaded_to">All class documents and videos are downloaded to the \'SchoolDirectStudent\' folder in your storage directory</string>
+    <string name="while_inside_live_class">While inside a live class press \'9\' to prompt your instructor to ask question</string>
+    <string name="click_on_settings_icon_to_use_app_for_calls">Click on the settings icon on the home page.  Click on the \'Use School Direct Student app for calls\' button. \n\nPerforming this action will also close the app</string>
+    <string name="click_to_use_app_for_calls">Go to home page. \nClick on the rounded close button at the bottom down corner</string>
+    <string name="click_and_proceed_to_enter_classroom">Click on the refresh icon on the enrolments page and proceed to enter classroom.</string>
+    <string name="if_you_did_not_receive_popup">If you do not receive pop-up to approve transaction, please follow these steps: \n1. dial *170# on the MTN mobile number you entered. \n2. Select option 6. My Wallet. \n3. Select option 3. My Approvals. \n4. Enter pin and approve pending transaction.</string>
+    <string name="download_class_material_if_one_exists">Class starts soon. Be sure to download all undownloaded class documents. \n\nPlease follow these steps enter class: \n1. Click on \'My Enrolments\' icon on the home page \n2. Click \'ENTER CLASSROOM\' button \n3. Click the \'Live class\' button to join live class</string>
+    <string name="class_doc_available_for_download">class document available for download</string>
+    <string name="class_call_drops">Class call drops with the message \'Conditional call forwarding active.\'</string>
+    <string name="if_you_use_different_sim_card">If you use a different sim card from the one you registered with, you will be dropped out of live and recorded classes</string>
+    <string name="class_video_available_for_download">recorded class video available for download</string>
+    <string name="class_assignment_available_for_download">class assignment available for download</string>
+    <string name="class_class_quiz_available">class quiz available</string>
+    <string name="conference_call_class_upcoming_now">conference call class upcoming now</string>
+    <string name="video_class_upcoming_now">video class upcoming now</string>
+    <string name="audio_class_upcoming_now">audio class upcoming now</string>
+    <string name="upcoming_class">Upcoming class</string>
+    <string name="download_class_session_document">Download class session document.</string>
+    <string name="download_class_assignment">In order to view new assignments: \n\n1 .Click to go to unsubmitted assignments. \n4. Click on the refresh icon at the upper right corner to see newly added assignments</string>
+    <string name="download_class_video">In order to view new videos: \n\n1 .Click to go to class videos. \n4. Click on the refresh icon at the upper right corner to see newly added videos</string>
+    <string name="download_marked_class_assignment">In order to view newly marked assignments: \n\n1 .Click to go to marked assignments. \n2. Click on the refresh icon at the upper right corner to see newly marked assignments</string>
+    <string name="download_class_quiz">In order to view new quizzes: \n\n1. Click to go to class quizzes \n2. Click the refresh icon at the top right corner of the page to see newly added quizzes</string>
+    <string name="download">Download</string>
+    <string name="class_chat">Class chat</string>
+    <string name="class_documents">Class Documents</string>
+    <string name="class_assignmment">Class assignment</string>
+    <string name="class_quiz">Class quiz</string>
+    <string name="you_are_already_using_system_default">You are already using the system default calling app for calls</string>
+    <string name="you_are_already_using_school_direct_student_app">You are already using School Direct Student app for calls</string>
+    <string name="click_on_a_row_to_view_additional_payment_details">Click on a row to view additional payment details</string>
+    <string name="msg_from">Message from</string>
+    <string name="instructor">instructor</string>
+    <string name="customLoadingIcon">&#xe807;</string>
+    <string name="customPlayIcon">&#xe802;</string>
+    <string name="customStopIcon">&#xe803;</string>
+    <string name="stream_audio">Radio Rasil</string>
+    <string name="webportalaccess">Web portal access</string>
+    <string name="web_access_link" translatable="false">http://41.189.178.40:55555/passco</string>
+    <string name="webinstruction">1. Go to <b> http://41.189.178.40:55555/passco</b> or click on the link above \n\n2.Enter your phonenumber in <b>(233) format</b> into the username field\n\n3.Enter the pin code above into the password field\n\n\nThank you</string>
+    <string name="generatingotp">Generating pin... Please wait...</string>
+    <string name="video_stream">Video stream</string>
+    <string name="audio_stream">Audio stream</string>
+    <string name="register"><u>Register</u></string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password must be at least 6 characters long</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="title_retry">Try Again!</string>
+
+    <string name="facebook_app_id">283059643162009</string>
+    <string name="fb_login_protocol_scheme">fb283059643162009</string>
+    <string name="server_client_id">903850405948-q4v1g97fgmlfbcllouj210jfukuvk07t.apps.googleusercontent.com</string>
+    <string name="to_prompt_your_instructor_to_ask_question_press_9">To prompt your instructor to ask question while class conference call is in progress, press 9</string>
+    <string name="title_activity_select_role">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="view"><u>View</u></string>
+    <string name="order"><u>Order</u></string>
+    <string name="delivery"><u>Delivery</u></string>
+    <string name="colored_contact"><u>Contact</u></string>
+    <string name="location"><u>Location</u></string>
+
+
+</resources>

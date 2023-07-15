@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#967A21</color>
+    <color name="colorPrimaryDark">#737373</color>
+    <color name="colorAccent">#EB4F12</color>
+    <color name="switchColor">#FFFFFF</color>
+    <color name="white">#000</color>
+    <color name="actual_white">#FFFFFF</color>
+    <color name="blue">#6E84E7</color>
+    <color name="violet">#fff</color>
+    <color name="transparent">#0fff</color>
+    <color name="greenish_ash">#EBF0F6</color>
+    <color name="deep_violet">#8453FA</color>
+    <color name="light_violet">#BA72E8</color>
+    <color name="lighter_violet">#CCA3FF</color>
+    <color name="colorgreen">#32C24D</color>
+    <color name="coloryellow">#F1C139</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <!-- Text color used for character counter when the max limit has been exceeded -->
+    <!-- Tint color for the call subject history icon. -->
+    <!-- Divider line on the call subject dialog. -->
+    <!-- Text color for the SEND & CALL button on the call subject dialog. -->
+    <!-- Background color for the call subject history view. -->
+    <!-- White background for dialer -->
+    <!-- Background color of new dialer conferenceCallActivity -->
+    <!-- Background color for search results and call details -->
+    <!-- start Colors for the dialpad -->
+    <color name="dialpad_digits_text_color">#333</color>
+    <color name="dialpad_icon_tint">#b3b3b3</color>
+    <color name="dialpad_voicemail_tint">#919191</color>
+    <!-- End Colors for the dialpad -->
+
+    <color name="background">#FFF</color>
+    <color name="textColor">#D3D3D3</color>
+    <color name="inactive_background">#D6B163</color>
+    <color name="player_retry_text_color">#fff</color>
+</resources>
