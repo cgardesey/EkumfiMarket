@@ -1,6 +1,6 @@
 # ProductTrader
 
-Welcome to ProductTrader! This mobile app allows both customers and providers to engage in seamless online shopping experiences. Whether you're looking to browse and purchase products or showcase and sell your own, our app has got you covered.
+Welcome to ProductTrader! This mobile app allows both customers and providers to engage in seamless online shopping experiences. Whether you're looking to browse and purchase products or showcase and sell your own, this app has got you covered.
 
 ## Features
 
@@ -11,17 +11,13 @@ Welcome to ProductTrader! This mobile app allows both customers and providers to
 3. **Cart Management:** Add products to your cart, review the items, and make changes as needed before proceeding to checkout.
 4. **Secure Checkout:** Enjoy a safe and secure payment process to complete your purchase.
 5. **Order Tracking:** Keep track of your orders and get updates on their status, including shipment tracking details.
-6. **Wishlist:** Create and manage your wishlist, saving products for future reference or purchase.
-7. **Notifications:** Stay informed about order confirmations, delivery updates, and exclusive offers through push notifications.
+6. **Chat:** Chat with your provider using the in-app messaging feature
 
 ### For Providers
 
 1. **Product Management:** Easily manage your inventory, including adding new products, updating information, and adjusting pricing and availability.
 2. **Order Fulfillment:** Receive and process customer orders efficiently, updating order status and tracking information.
-3. **Analytics and Reports:** Gain valuable insights into your business performance with detailed analytics and reports, helping you make informed decisions.
-4. **Customer Interaction:** Engage with customers through messaging and provide prompt assistance for inquiries and support.
-5. **Promotions and Offers:** Create and manage promotional campaigns and discounts to attract customers and boost sales.
-6. **Notifications:** Receive real-time notifications for new orders, customer inquiries, and other important updates.
+3. **Chat:** Chat with your customers using the in-app messaging feature
 
 ## Getting Started
 
