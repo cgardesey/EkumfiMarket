@@ -38,12 +38,6 @@ The example project requires the following configuration:
 
 You may need to update these values in the `build.gradle` file based on your project requirements.
 
-## Usage
-
-ProductTrader project demonstrates a simple sms based application that retrieves sms from from an embedded control unit and updates the UI on the screen to reflect the state of the security system. It also sends sms to control the state of the security system. You can use it as a reference to understand how to implement similar functionality in your own projects.
-
-The application consists of multiple fragments, each showcasing a different Android component or feature. Use the navigation drawer to switch between fragments and explore the different features.
-
 If you're looking to integrate with the backend api, make sure to check out the backend repository [ariduino firmware](https://github.com/cgardesey/trader_apps_backend) for detailed instructions.
 
 ## License
