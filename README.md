@@ -29,16 +29,23 @@ To start using ProductTrader, follow these steps:
 4. **Explore and Interact:** Start exploring the app's features based on your role as a customer or provider.
 5. **Enjoy the Experience:** Enjoy the seamless shopping experience and take advantage of all the app's functionalities.
 
-## Support
+## Configuration
 
-If you encounter any issues or have any questions or suggestions, we're here to help. Please reach out to our support team via [email@example.com](mailto:email@example.com) or visit our website at [www.example.com](http://www.example.com) for more information and assistance.
+The example project requires the following configuration:
 
-## Contributing
+- Minimum SDK version: 14
+- Target SDK version: 23
 
-We welcome contributions to enhance ProductTrader. If you have any ideas or improvements, please submit a pull request or open an issue on our [GitHub repository](https://github.com/your-repo-link). We appreciate your feedback and collaboration!
+You may need to update these values in the `build.gradle` file based on your project requirements.
+
+## Usage
+
+ProductTrader project demonstrates a simple sms based application that retrieves sms from from an embedded control unit and updates the UI on the screen to reflect the state of the security system. It also sends sms to control the state of the security system. You can use it as a reference to understand how to implement similar functionality in your own projects.
+
+The application consists of multiple fragments, each showcasing a different Android component or feature. Use the navigation drawer to switch between fragments and explore the different features.
+
+If you're looking to integrate with the backend api, make sure to check out the backend repository [ariduino firmware](https://github.com/cgardesey/smart_security_firmware) for detailed instructions.
 
 ## License
 
-ProductTrader is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the app following the terms of the license.
-
-© 2023 Your Company Name. All rights reserved.
+ProductTrader project is licensed under the [MIT License](LICENSE). Feel free to use it as a reference or starting point for your own projects.
