@@ -44,7 +44,7 @@ ProductTrader project demonstrates a simple sms based application that retrieves
 
 The application consists of multiple fragments, each showcasing a different Android component or feature. Use the navigation drawer to switch between fragments and explore the different features.
 
-If you're looking to integrate with the backend api, make sure to check out the backend repository [ariduino firmware](https://github.com/cgardesey/smart_security_firmware) for detailed instructions.
+If you're looking to integrate with the backend api, make sure to check out the backend repository [ariduino firmware](https://github.com/cgardesey/trader_apps_backend) for detailed instructions.
 
 ## License
 
