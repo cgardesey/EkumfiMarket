@@ -21,13 +21,14 @@ Welcome to ProductTrader! This mobile app allows both customers and providers to
 
 ## Getting Started
 
-To start using ProductTrader, follow these steps:
+To get started with the project, follow the instructions below:
 
-1. **Installation:** Download the latest version of the app from the Google Play Store.
-2. **Registration:** Create an account as either a customer or provider, providing the necessary information.
-3. **Authentication:** Log in using your registered email and password.
-4. **Explore and Interact:** Start exploring the app's features based on your role as a customer or provider.
-5. **Enjoy the Experience:** Enjoy the seamless shopping experience and take advantage of all the app's functionalities.
+1. Clone this repository to your local machine using Git or download the ZIP file.
+2. Open Android Studio and select "Open an existing Android Studio project."
+3. Navigate to the cloned or downloaded project directory and click "OK."
+4. Android Studio will build the project and download any necessary dependencies.
+5. Connect an Android device or use an emulator to run the application.
+
 
 ## Configuration
 
