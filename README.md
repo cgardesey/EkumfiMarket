@@ -38,6 +38,15 @@ The example project requires the following configuration:
 
 You may need to update these values in the `build.gradle` file based on your project requirements.
 
+
+## Technologies Used
+
+- Android
+- Java.
+- Volley (for API communication)
+- Glide (for image loading)
+- Realm (for local data storage)
+
 If you're looking to integrate with the backend api, make sure to check out the  [backend repo](https://github.com/cgardesey/trader_apps_backend) for detailed instructions.
 
 ## License
