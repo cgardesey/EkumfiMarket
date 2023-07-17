@@ -33,8 +33,8 @@ To start using ProductTrader, follow these steps:
 
 The example project requires the following configuration:
 
-- Minimum SDK version: 14
-- Target SDK version: 23
+- Minimum SDK version: 21
+- Target SDK version: 30
 
 You may need to update these values in the `build.gradle` file based on your project requirements.
 
