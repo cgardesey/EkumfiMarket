@@ -1,4 +1,4 @@
-# Android Project: Product Trader App
+# ProductTraderApp
 
 Welcome to ProductTrader! This mobile app allows both customers and providers to engage in seamless online shopping experiences. Whether you're looking to browse and purchase products or showcase and sell your own, this app has got you covered.
 
