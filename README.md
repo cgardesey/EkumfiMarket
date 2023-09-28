@@ -16,7 +16,7 @@ Welcome to ProductTrader! This mobile app allows both customers and providers to
 
 1. **Product Management:** Easily manage your inventory, including adding new products, updating information, and adjusting pricing and availability.
 2. **Order Fulfillment:** Receive and process customer orders efficiently, and updating order status.
-3. **Chat:** Chat with your customers using the in-app messaging feature
+3. **Chat:** Chat with your provider using the chat feature
 
 ## Getting Started
 
