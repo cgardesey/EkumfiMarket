@@ -10,7 +10,7 @@ Welcome to ProductTrader! This mobile app allows both customers and providers to
 2. **Product Details:** View detailed information about each product, including descriptions, pricing, availability.
 3. **Cart Management:** Add products to your cart, review the items, and make changes as needed before proceeding to checkout.
 4. **Secure Checkout:** Enjoy a safe and secure payment process to complete your purchase.
-5. **Chat:** Chat with your provider using the in-app messaging feature
+5. **Chat:** Chat with your provider using the chat feature
 
 ### For Providers
 
