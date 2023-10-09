@@ -1,6 +1,6 @@
-# Ekufi Juice Trading App
+# Ekumfi Juice Market App
 
-Welcome to the Ekufi Juice Trading App, your go-to platform for trading Ekufi juice products between stores and customers. This Android app simplifies the process of buying and selling Ekufi juice products, connecting stores and customers seamlessly.
+Welcome to the Ekumfi Juice Market App, your go-to platform for trading Ekufi juice products between stores and customers. This Android app simplifies the process of buying and selling Ekufi juice products, connecting stores and customers seamlessly.
 
 ## Features
 
